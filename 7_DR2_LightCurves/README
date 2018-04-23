@@ -1,0 +1,21 @@
+1) Open the Gaia_AstroQuery.ipynb to get the new Data.
+   Files will be stored in the LCC_Test.csv, UCL_Test.csv and US_Test.csv files
+   Each one has columns: 
+   source_id,ra,ra_error,dec,dec_error,parallax,parallax_error,l,b,g_mag_abs,g_min_ks,pmra,pmra_error,pmdec,pmdec_error
+   
+2) This files are already cut-off using Mamajeck proper motions and parallax conditions.
+   If needed, one can also use the 5Myr isochrone with Av[extintion] per field and the 60Myr isochrone without extintion 
+   to select the final sample. 
+   
+3) One way or another RA and DEC must be saved to get the light curves from the SuperWASP database. 
+   RA and DEC are saved automatically from the Gaia query in:
+   LCC_Coordinates.csv, UCL_Coordinates.csv and US_Coordinates.csv
+   
+   Move all the tables and fits to LCC, UCL and US
+   
+4) Folders LCC, UCL and US contain the tables and fit files to plot the light curves. 
+   Also the scripts from the SuperWASP database to retreive the data.
+   
+5) Using the scripts: 
+   Light_Curves_LCC.ipynb, Light_Curves_UCL.ipynb and Light_Curves_US.ipynb
+   the final sample of light curves is obtained and stored in two different folders.    	
