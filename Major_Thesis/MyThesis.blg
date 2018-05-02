@@ -20,45 +20,45 @@ Warning--empty publisher in 2009sfch.book..537C
 Warning--empty journal in 2010EAS....41..107N
 Warning--can't use both author and editor fields in 2013pss3.book..309T
 Warning--empty publisher in 2013pss3.book..309T
-You've used 21 entries,
+You've used 29 entries,
             2773 wiz_defined-function locations,
-            779 strings with 10997 characters,
-and the built_in function-call counts, 14300 in all, are:
-= -- 1154
-> -- 1299
-< -- 14
-+ -- 438
-- -- 416
-* -- 1369
-:= -- 2325
-add.period$ -- 81
-call.type$ -- 21
-change.case$ -- 199
-chr.to.int$ -- 20
-cite$ -- 47
-duplicate$ -- 458
-empty$ -- 829
-format.name$ -- 445
-if$ -- 2882
+            834 strings with 12882 characters,
+and the built_in function-call counts, 18894 in all, are:
+= -- 1531
+> -- 1699
+< -- 17
++ -- 572
+- -- 542
+* -- 1803
+:= -- 3077
+add.period$ -- 110
+call.type$ -- 29
+change.case$ -- 265
+chr.to.int$ -- 28
+cite$ -- 63
+duplicate$ -- 621
+empty$ -- 1112
+format.name$ -- 583
+if$ -- 3806
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 23
-newline$ -- 131
-num.names$ -- 86
-pop$ -- 374
+missing$ -- 31
+newline$ -- 176
+num.names$ -- 118
+pop$ -- 488
 preamble$ -- 1
-purify$ -- 180
+purify$ -- 238
 quote$ -- 0
-skip$ -- 403
+skip$ -- 538
 stack$ -- 0
-substring$ -- 409
-swap$ -- 65
+substring$ -- 503
+swap$ -- 81
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 221
+type$ -- 309
 warning$ -- 5
-while$ -- 86
+while$ -- 116
 width$ -- 0
-write$ -- 313
+write$ -- 426
 (There were 5 warnings)

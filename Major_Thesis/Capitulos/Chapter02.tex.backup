@@ -184,7 +184,7 @@ On the other hand, in $2001$, a different formulation was proposed by Pavel Krou
 The IMF generation will be addressed in the same fashion as explained above for the Salpeter's power law, where a Monte-Carlo process will be used and the normalization constant will be set to the total number of stars in a mass range $m_1 < m < m_2$. 
 
 %============================================================================================================================================================
-\section{Probability of Transit Detection}
+\section{Probability of Transit Detection}\label{sec:DetectionProbability}
 
 %Star with a planet, Gaia detectability
 
@@ -310,13 +310,39 @@ It is well-known that the rings formation is a non-static phenomena, and there i
 
 Currently, most of the statistics are based on \textit{Hot Jupiters} \cauthor{2013pss3.book..309T}\citeyear{2013pss3.book..309T}. However, there exists different problems with this, because the formation of rings around such objects can be affected by the low-obliquities causing the rings to edge-on or the small Hill sphere radius where they can be embedded in. In addition, viscous and Poynting-Robertson drags cause particle loss , and the high equilibrium black-body temperatures avoid materials to remain the solid state. Survival of the remnant ring depends on if they were created by tidal disruptions or continuous feeding because this will set the timescale on which the rings are expected to exist \cauthor{1984prin.conf..641H}\citeyear{1984prin.conf..641H}. In our particular case, the most important question regarding the rings is: What is their age?. This is because we need to know how long they are expected to live in order to properly compute the probability of observing ring systems around a planet given the overall age of the star and the planetary system itself. The age of the rings can be affected by the mean residence time of the particles on the rings or by how long the structure/sources have been in place For example in the case of Jupiter, if some moons suddenly disappear, or cease emitting dust, the rings will dissipate in $\sim 10^5$yr \cauthor{2013pss3.book..309T}\citeyear{2013pss3.book..309T}. Interaction and physical processes may change or reset the age as can be the shepherding of the moons inside the rings leading to an age range of $100\times 10^6$-$6\times10^8$yr \cauthor{1994P&SS...42.1139C}\citeyear{1994P&SS...42.1139C}, or ring's viscous spreading ($10^5$-$10^9$yr based on Saturn's ring A) \cauthor{2009sfch.book..537C}\citeyear{2009sfch.book..537C} or ($\sim10^9$yr) from viscous timescales if the gas is considered to be non-turbulent \cauthor{1984prin.conf..641H}\citeyear{1984prin.conf..641H}. There exists also the chance that the ring is completely disrupted (based on the fragmentation criteria), so in that case we end up with a time for complete loss of the rings of $10^{7}$-$10^8$yr \cauthor{1994P&SS...42.1139C}\citeyear{1994P&SS...42.1139C} or based on evolutionary processes $< 10^8$yr \cauthor{2009sfch.book..537C}\citeyear{2009sfch.book..537C}. On the other hand, considering cometary passages which could break a satellite or to tidally disrupt the comet applied to Saturn's ring lead to a time range of $10^7$-$10^8$yr for the A-ring, $10^8$-$10^9$yr for the B-ring, and $10^7$yr from radial spreading \cauthor{2009sfch.book..537C}\citeyear{2009sfch.book..537C}.\\
 
-As has been presented above, different age ranges can be derived for the rings lifetime through models and observations of our own solar system. However, the remaining question is: Do they form at the very beginning, the middle or the end of the planetary system formation?. According to \cauthor{2009Icar..199..413C}\citeyear{2009Icar..199..413C} the main core of Saturn's B-ring was formed in the first Gyr of the solar system in which collisions are expected to be much more likely. However, from simulations it is pointed out Saturn's ring formation can be understood a huge disruption near the end of the planetary formation period during which the circum-planetary gas disk is still present \cauthor{2010Natur.468..943C}\citeyear{2010Natur.468..943C}. If we look to Uranus or Neptune,   
+As has been presented above, different age ranges can be derived for the rings lifetime through models and observations of our own solar system. However, the remaining question is: Do they form at the very beginning, the middle or the end of the planetary system formation?. According to \cauthor{2009Icar..199..413C}\citeyear{2009Icar..199..413C} the main core of Saturn's B-ring was formed in the first Gyr of the solar system in which collisions are expected to be much more likely. However, from simulations it is pointed out Saturn's ring formation can be understood a huge disruption near the end of the planetary formation period during which the circum-planetary gas disk is still present \cauthor{2010Natur.468..943C}\citeyear{2010Natur.468..943C}. If we look to Uranus or Neptune, possibly they have been less affected and have not changed dramatically over the age of the solar system, where rings and moons has been oscillating between accretion and disruption for many Gyr \cauthor{2013pss3.book..309T}\citeyear{2013pss3.book..309T}.\\
 
+In general, there is no complete consensus on whether the rings form at the beginning, or at the end of the planetary formation process, neither on the time they can live as a ring-structure around the planet. Base don this, we decided to introduce a fifth probability to account for the most likely lifespan a ring can have. The probability is defined in \autoref{eq:Prob_5}, but it is necessary to have in mind that as it is hard to guarantee the exact moment in time where they form, then this probability assumes each time interval has the same chance and we can only provide an estimation based on the mean-rings lifespan and the stellar age.  
 
-\cauthor{}\citeyear{}
+\begingroup
+\Large
+\begin{equation}
+\textnormal{P}_5 = \frac{\textnormal{Rings}~\textnormal{lifespan}}{\textnormal{Host}~\textnormal{star's}~\textnormal{age}}
+ \label{eq:Prob_5}
+\end{equation}
+\endgroup
+
 %============================================================================================================================================================
 
 \section{Monte-Carlo simulations}\label{sec:MCSec}
+
+As was shown in \autoref{sec:PowerLawSec}, we have two different ways to generate the exoplanetary mass-period distribution either by considering a weak correlation i.e. $\beta$-distribution or using a simple power law derived from the observations. One way or another, we are able to generate a new sample of planets with mass and period following a given distribution using the Monte-Carlo method. This method consists in drawing a sample of $N$ values which follows the wanted distribution using randomly distributed numbers.\\
+
+In the first case, we have the $\beta$-distribution addressed in \autoref{subsec:BetaDist}. A sample of $10.000$ mass-period pairs were generated following \autoref{eq:Beta_Monte}, where ($\alpha_\textnormal{m}, \beta_\textnormal{m}$), ($\alpha_\textnormal{p}, \beta_\textnormal{p}$), and ($\delta_\textnormal{1}, \delta_\textnormal{2}$) were created using pseudo-random numbers following a $\beta$-distribution as pointed out in \cauthor{1538-3881-134-5-2061}\citeyear{1538-3881-134-5-2061}. The mass and period range covers $0.008 \leq \textnormal{m/Mj} \leq 26.7$, and $0.8079 \leq \textnormal{p/days} \leq 6776.1$ respectively.\\
+
+\begingroup
+\Large
+\begin{equation}
+  \begin{align*}
+  \textnormal{m}~~&=~~155.5*(\alpha_\textnormal{m} + \delta_\textnormal{1}) / (\alpha_\textnormal{m} + \delta_\textnormal{1} + \beta_\textnormal{m} + \delta_\textnormal{2}) \\[10pt]
+  \textnormal{p}~~&=~~11650.0*(\alpha_\textnormal{p} + \delta_\textnormal{1}) / (\alpha_\textnormal{p} + \delta_\textnormal{1} + \beta_\textnormal{p} + \delta_\textnormal{2})
+ \label{eq:Beta_Monte}
+ \end{align*}
+\end{equation}
+\endgroup \\
+
+The period/mass, period/semi-major axis, and mass/semi-major axis are shown in figures \autoref{fig:PeriodMass_Beta},\autoref{fig:PeriodMajor_Beta}, and  \autoref{fig:MassMajor_Beta} respectively where each dot corresponds to each pair generated using the $\beta$-distribution method, and the semi-major axis was computed using Kepler's third law.\\ 
+
 
 \begin{figure}[!ht]
 \centering
@@ -339,6 +365,8 @@ As has been presented above, different age ranges can be derived for the rings l
 \label{fig:MassMajor_Beta}
 \end{figure}
 
+On the other hand, we decided to use the single power law approach as suggested by (\cauthor{2008PASP..120..531C}\citeyear{2008PASP..120..531C}; \cauthor{2006ApJ...646..505B}\citeyear{2006ApJ...646..505B}) to generate the mass-period distribution for exoplanets, and also following the well-known Slapeter- and-Kroups's power law to generate the stellar masses as was explained in \autoref{subsec:Salpeter} and \autoref{subsec:Kroupa} individually. Following this method, we set the values for the exponents in the case of the exoplanets to $1.16$ and $0.74$ for the mass and the period respectively as suggested in \cauthor{2010EAS....41..107N}\citeyear{2010EAS....41..107N} who basically based his results on different observations and corrections to values previously obtained by \cauthor{2008PASP..120..531C}\citeyear{2008PASP..120..531C} and \cauthor{2006ApJ...646..505B}\citeyear{2006ApJ...646..505B}). According to the last, we can generate a sample of exoplanetary masses and periods in a range covering $0.3 \leq \textnormal{m/Mj} \leq 10$, and $2 \leq \textnormal{p/days} \leq 2000$. This a slightly smaller range compared to what the $\beta$-distribution method can provid but it is still useful because it lies in the range we are interested in. Thus, a sample of $10.000$ pairs was drew following the method explained in \autoref{sec:PowerLawSec}. In \autoref{fig:Mass_Nielsen} and \autoref{fig:Period_Nielsen} the histogram and the cumulative function for the generated values are shown in blue whilst the orange dashed line shows the expected shape that these values should follow from the original power law. The figures on the left are shown in linear scale while those on the right are in logarithmic scale. As can be seen, both the mass and period values simulated follow the original power law. For comparison as in the last case, the period/mass, period/semi-major axis, and mass/semi-major axis are shown in figures \autoref{fig:PeriodMass_Nielsen},\autoref{fig:PeriodMajor_Nielsen}, and  \autoref{fig:MassMajor_Nielsen} respectively. In both cases, the $\beta$-distribution and the power-law method reproduce the observed distribution of mass and period, however, as using the power law we can double check that the simulated values follow the original trend, which is not the case for the $\beta$-distribution where the constants are imposed from their observations, we will use the power-law method to generate our final sample of mass-period pairs.\\ 
+
 \begin{figure}[!ht]
 \centering
   \subfloat{\includegraphics[width = 18.5cm, height = 15.5cm, scale = 1.0, angle = 90]{./Graficos/Capitulo_2/2_Exop_distributions/Mass_distribution_Nielsen.png}} 
@@ -350,7 +378,7 @@ As has been presented above, different age ranges can be derived for the rings l
 \centering
   \subfloat{\includegraphics[width = 18.5cm, height = 15.5cm, scale = 1.0, angle = 90]{./Graficos/Capitulo_2/2_Exop_distributions/Period_distribution_Nielsen.png}} 
 \caption{\scriptsize{Something!}}
-\label{fig:Mass_Nielsen}
+\label{fig:Period_Nielsen}
 \end{figure}
 
 \begin{figure}[!ht]
@@ -374,8 +402,87 @@ As has been presented above, different age ranges can be derived for the rings l
 \label{fig:MassMajor_Nielsen}
 \end{figure}
 
+Finally, the same power-law method was use to generate the stellar mass. As was introduced in \autoref{subsec:Salpeter} and \autoref{subsec:Kroupa}, we have two different power laws which can describe the stellar mass functions. Taking into account that n general there is no consensus on a single exponent which could describe the distribution of stellar masses in the universe, we decided to test both exponents but paying more attention to the Kroupa's initial mass function distribution due to the fact that gives different values of the exponent to small masses which is the actual problem in astrophysics. Following this, we created once again a sample of $10.000$ stars following the initial mass function described by a Salpeter's and Kroupa's exponent. In the case of Salpeter, the mass range covers  $0.1 \leq \textnormal{m/M$_\odot$} \leq 10$ with an exponent of $2.35$, whilst the Kroupa's range covers $0.1 \leq \textnormal{m/M$_\odot$} \leq 0.5$ with an exponent of $1.3$, and and exponent of $2.3$ for $0.5 \leq \textnormal{m/M$_\odot$} \leq 10$. The drawn distributions are shown in \autoref{fig:Salpeter_IMF} and \autoref{fig:Kroupa_IMF}, where the histogram and cumulative functions are shown in blue and the original power law distributions are shown with the dashed orange line. In the case of the Korupa's distribution, a fine break can be seen in the logarithmic scale figure for the small stellar masses due to the fact that we are using two different exponents for different mass ranges.\\  
+
+\begin{figure}[!ht]
+\centering
+  \subfloat{\includegraphics[width = 18.5cm, height = 15.5cm, scale = 1.0, angle = 90]{./Graficos/Capitulo_2/2_Exop_distributions/Salpeter.png}} 
+\caption{\scriptsize{Something!}}
+\label{fig:Salpeter_IMF}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+  \subfloat{\includegraphics[width = 18.5cm, height = 15.5cm, scale = 1.0, angle = 90]{./Graficos/Capitulo_2/2_Exop_distributions/Kroupa.png}} 
+\caption{\scriptsize{Something!}}
+\label{fig:Kroupa_IMF}
+\end{figure}
+
+Summarizing, we generated a sample of $10.000$ exoplanetary mass-period pairs and stellar masses individually following in the case of the exoplanets $\beta$-distribution or a simple power law, and in the case of the stellar initial mass function using two different power laws known as Salpeter's and Kroupa's initial mass function. As we different ways to generate mock samples, we decided to stick to the power law generation in the case of the exoplanetary mass-period distribution because we are able to check the cumulative function and if the actual drawn pairs follow the original distributions. In the same way, for the stellar mass generation we decided to use the Kroupa's distribution because it treats in a different fashion i.e. different power law value, the small masses which are really important in the scenario we are considering. Having said this, we proceed to use these values and the previous information presented in the last sections to compute the probability of transit detection. This is thoroughly explained in \autoref{sec:AnalyticForm} in which we address this calculation in two different ways. Firstly, using the results from the Monte-Carlo simulations, and secondly evaluating directly the analytic form of the transit probability.     
+
 
 %============================================================================================================================================================
 
-\section{Analytic Form}
+\section{Detection Probability: Monte-Carlo vs Analytic Form}\label{sec:AnalyticForm}
 %============================================================================================================================================================
+
+In \autoref{sec:DetectionProbability}, the main components of the probability of a ringed-system transiting in front of its parent star was addressed. However, the main goal is to constrain for the different exoplanetary mass-period pairs how it changes as a function of the stellar mass. We decided to tackle down this problem in two different ways: i) using the Monte-Carlo results for the exoplanetary mass-period distributions, and ii) simply generating the probability from the analytic form without recurring to any Monte-Carlo generation of values. In both cases, we use the probability function shown in \autoref{eq:FinalDetectProb} which does not include the fifth probability corresponding to the planetary rings' lifetime. this will be addressed separately at the end of this section.\\
+
+First of all, in the case of the Monte-Carlo process, a sample of $10.000$ stars between $0.1 \leq \textnormal{m/M$_\odot$} \leq 10.0$ was generating following the Kroupa's initial mass function. Moreover, a sample of $10.000$ mass-period pairs were also generated following the power law distribution suggested by \cauthor{2010EAS....41..107N}\citeyear{2010EAS....41..107N} and explained in \autoref{sec:MCSec}. Once we have set the final sample of exoplanets and stars to be tested, we proceed to evaluate out the detection probability function which is given by \autoref{eq:FinalDetectProb}. It is important to have in mind that in this equation the values corresponding to the exoplanetary mass and period are taken from the Monte-Carlo simulation. Also, the semi-major axis is obtained using Kepler's third law, and the stellar mass is obtained with the Monte-Carlo generation as well. We need to have a relation between the stellar masses and stellar radii. To achieve this goal, we used two different approaches. The first one assumes that the stars are in the main sequence and follow the regular relation given by $\textnormal{R} \propto \textnormal{M}^{0.8}$, however this assumes that the stars are already in the ZAMS, have the soalr metallicity and are massive stars burning H to He via the CNO chain. This not entirely true for our purposes because we aim to study young stellar populations. Thus, we decided to use the \textit{MESA}-code provided through the \textit{MIST}-package (\cauthor{2016ApJS..222....8D}\citeyear{2016ApJS..222....8D}; \cauthor{2016ApJ...823..102C}\citeyear{2016ApJ...823..102C}) to compute the stellar isochrone for a $20Myr$ star varying the masses between $0.1 \leq \textnormal{m/M$_\odot$} \leq 10.0$ which is the range we are interested in. In \autoref{fig:RMInterpol}, the stellar radius versus the stellar mass obtained using the $20Myr$ isochrone is shown. The blue dots correspond to the values retrieved by the model while the orange dots represent a linear interpolation performed to complete some empty regions in the isochrone. Once this is settle, we can assign the expected stellar radius for a given mass assuming that the stellar age is close to $20Myr$.\\ 
+
+\begingroup
+\large
+\begin{equation}
+  \textnormal{Detection Probability} = 0.17 \left(\frac{\textnormal{R}_\star + \textnormal{R}_\textnormal{H}}{\textnormal{a}} \right) \left[ 1 - \left( \frac{\textnormal{Gaia}~\textnormal{Duration} - \textnormal{Eclipse}~\textnormal{Duration}}{\textnormal{Gaia}~\textnormal{Duration}} \right)^\textnormal{n} \right]
+ \label{eq:FinalDetectProb}
+\end{equation}
+\endgroup \\
+
+\begin{figure}[!ht]
+\centering
+  \subfloat{\includegraphics[width = 12cm, height = 9cm]{./Graficos/Capitulo_2/2_Exop_distributions/Linear_Interpolation.png}} 
+\caption{\scriptsize{Something!}}
+\label{fig:RMInterpol}
+\end{figure}
+
+Once the function is evaluated using all the different parameters described above, we end up with a detection probability distribution for each exoplanet as a function of the stellar mass as shown in \autoref{fig:MonteKroupaNielsen}. Panel (a) shows the detection probability as a function of stellar mass computed through \autoref{eq:FinalDetectProb} for five random selected values out of the $10.000$ simulated. Panel (b) shows exactly the same parameters but in this case the detection probability was summed up in bins of $0.5M_\odot$ to obtain the number of detections expected.\\ 
+
+\begin{figure}[!ht]%
+    \centering
+    \subfloat[label 1]{{\includegraphics[width = 10cm, height = 7cm]{./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen.png} }}%
+    \qquad
+    \subfloat[label 2]{{\includegraphics[width = 10cm, height = 7cm]{./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_1.png} }}%
+    \caption{\scriptsize{Something!}}%
+    \label{fig:MonteKroupaNielsen}%
+\end{figure}
+
+On the other hand, we evaluated directly \autoref{eq:FinalDetectProb} where instead of summing up each value inside a given bin, we integrate this function and use a weight to re-scale the values using the fact that as the stellar initial mass function follows a power law, it is possible to integrate each mass bin between boundaries $m_1$ and $m_2$ while leaving the total number of stars fixed i.e. $N = 10.000$, and finding the proportionality constant. This way it is easy to compute the number of detections without recurring to a generation of large samples using the Monte-Carlo approach. To check this, we decided to test an exoplanet of $10\textnormal{Mj}$ and $5\textnormal{yr}$ period. First, using the Monte-Carlo process to generate the $10.000$ starts following the Kroupa distribution and evaluating \autoref{eq:FinalDetectProb} with fixed exoplanetary mass-period. After this, the detection probability was summed up in bins of $0.5M_\odot$ and the result is shown in \autoref{fig:MonteAnalytic_1}. However, for the second case, \autoref{eq:FinalDetectProb} was directly evaluated in regular stellar mass array without any Monte-Carlo approach, and the detection probability was integrated fixing the total number of stars to re-scale each bin. The final result is shown in \autoref{fig:MonteAnalytic_2}. As can be seen from \autoref{fig:MonteAnalytic_1} and \autoref{fig:MonteAnalytic_2} both approaches lead to similar results, although in the case of the analytic form the slope is a bit steeper due to the fact that we are considering a fixed number of stars per bin derived from the continuity equation from the power law as explained before. If we reproduce the Monte-Carlo process several times we will eventually end up in this case. In brief, the analytic form approach will be used to study the dependence of this detection probability and the number of expected detections as a function of the fifth probability which was not introduced here and it is related to the lifetime of the planetary rings.\\
+
+\begin{figure}[!ht]%
+    \centering
+    \subfloat[label 1]{{\includegraphics[width = 10cm, height = 7cm]{./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_2.png} }}%
+    \qquad
+    \subfloat[label 2]{{\includegraphics[width = 10cm, height = 7cm]{./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_3.png} }}%
+    \caption{\scriptsize{Something!}}%
+    \label{fig:MonteAnalytic_1}%
+\end{figure}
+
+\begin{figure}[!ht]%
+    \centering
+    \subfloat[label 1]{{\includegraphics[width = 10cm, height = 7cm]{./Graficos/Capitulo_2/2_Exop_distributions/Analytic_Kroupa_Nielsen.png} }}%
+    \qquad
+    \subfloat[label 2]{{\includegraphics[width = 10cm, height = 7cm]{./Graficos/Capitulo_2/2_Exop_distributions/Analytic_Kroupa_Nielsen_1.png} }}%
+    \caption{\scriptsize{Something!}}%
+    \label{fig:MonteAnalytic_2}%
+\end{figure}
+
+It was pointed out in \autoref{subsec:RingsSec} that there is no general consensus on the timescale in which planetary rings are created or for how long they survive. However, based on our own solar system there is a range of possible values which will give a glimpse on this value. We decided to test how the detection probability and the number of detections change for different values. In \autoref{fig:Rings_Prob} each line was computed using the last method, avoiding the Monte-Carlo calculation for different rings' lifetime spanning from $1\times 10^5$yr to $1\times 10^7$yr because it was the most reliable range of values found in literature. The case in which the rings are not taken into account corresponds to the $0.0$yr value. It is clear that the younger the exoplanetary rings, the lower the probability of detecting them around the stellar system because as was shown in \autoref{eq:Prob_5} this probability is computed as a ratio between the the rings' lifetime and the stellar age. Thus, the larger the timescale, the larger the probability, and so the detections. This is really important because depending on this value we can expect different number of transits in a certain stellar mass range. However, it is worth noting that the highest probability is achieved towards the small stellar mass values.\\
+
+\begin{figure}[!ht]
+\centering
+  \subfloat{\includegraphics[width = 12cm, height = 9cm]{./Graficos/Capitulo_2/2_Exop_distributions/Analytic_rings_Kroupa_Nielsen.png}} 
+\caption{\scriptsize{Something!}}
+\label{fig:Rings_Prob}
+\end{figure}
+
+In conclusion, we have different ways to 

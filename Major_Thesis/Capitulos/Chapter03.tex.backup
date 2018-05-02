@@ -1,248 +1,117 @@
 %*****************************************
-\chapter{\textbf{Spectral Line Analysis}}\label{ch: Analysis}
+\chapter{\textbf{Gaia and SuperWASP sample data}}\label{ch: Data}
 %*****************************************
 
 \section{Introduction}
 
-In this chapter, the method used to obtain the spectra for the final sample of ALESS sources is addressed. A robust description of how the spectra was extracted and the lines were fitted is presented to clarify the different procedures carried out to characterize the sources. In order to guarantee reliable line detections we decided to compare the continuum-fit with line-fit using the $\chi^2$-difference assuming that a line is real if $\Delta \chi^2$ is larger than $25$ which translates into a $5\sigma$ detection. Only two sources out of the $51$ selected in \textcolor{RoyalBlue}{Chapter} \ref{ch: Data} satisfied our conditions. New insights about the spectroscopic redshift of ALESS070.1 and the SLED of ALESS122.1 are discuss. These sources were checked to have a counterpart in the Spitzer/IRAC survey to guarantee real detections, thus continuum and line maps are also presented.  
+The main goal of the project is to target young-star populations to enhance the probability of observing exoplanetary rings transiting in front of their parent star. Therefore, we mainly focused our study in the well-known OB association Sco-Cen which is mainly sub-divided into three different regions: Lower Centaurus Crux (LCC), Upper Centaurus Lupus (UCL), and Upper Scorpius (US). The \textit{Gaia}-DR1 and-DR2 data were used to select the final sample of stars satisfying conditions on the distance, parallaxes and proper motions based on previous research (\cauthor{2018MNRAS.tmp..210W}\citeyear{2018MNRAS.tmp..210W}; \cauthor{2016MNRAS.461..794P}\citeyear{2016MNRAS.461..794P}; \cauthor{1989A&A...216...44D}\citeyear{1989A&A...216...44D}). However, also a selection based on stellar evolution tracks and isochrones using the \textit{MESA}-code provided through the \textit{MIST}-package (\cauthor{2016ApJS..222....8D}\citeyear{2016ApJS..222....8D}; \cauthor{2016ApJ...823..102C}\citeyear{2016ApJ...823..102C}) was performed to guarantee that the final sample consists of stars between $5$Myr to $60$Myr. This informations is needed in order to obtain the $RA$ and $DEC$ coordinates of the objects of interest and retrieve the available light curves using the \textit{SuperWASP}-database (\cauthor{2010A&A...520L..10B}\citeyear{2010A&A...520L..10B}). The main results from the \textit{Gaia}-and \textit{SuperWASP}-queries are presented in more detail the next sections, including the light-curves preliminary results which are addressed extensively in \autoref{ch: Results} .   
+%============================================================================================================================================================
 
-\section{Spectrum Extraction}
+\section{Sco-Cen OB Association}
+%============================================================================================================================================================
 
-As was shown in \textcolor{RoyalBlue}{Chapter} \ref{ch: Data}, the final sample of ALESS sources after applying a cut-off in the signal-to-noise ratio is conformed by $51$ targets (see \textcolor{RoyalBlue}{Table} \ref{tab: FinalSampleProperties}). In order to extract the spectrum for each source, a circular region was selected centred at the coordinates in RA and DEC of the sources as reported in (\textcolor{webgreen}{Hodge et al}, \citeyear{Hodge13}) for $870\mu \mathrm{m}$ observations as a first guess for the possible, real pixel position of the maximum flux in our observation. Then, the spectrum was selected as a point spectrum from the pixel with maximum flux after performing a statistical analysis of the flux pixel by pixel inside the circular region using CASA. Two different methods were addressed varying the size of the circle because there could be small off-sets between the maximum emission of the galaxy at our frequency and the centre coordinates of the source. First we decided to use a circular radius of $1.0~\mathrm{arcsec}$, and searched for the pixel value corresponding to maximum emission inside that circle. Once the pixel value is obtained, we subtract all the different values of the flux (Stokes I) along the line cube image (i.e. along the frequency axis). The same procedure was carried out with a circular region of radius $0.5~\mathrm{arcsec}$ in order to confirm whether reducing the aperture would change or not the pixel value for maximum flux due to some coordinates off-set. However, both methods were consistent and even using larger radius values gave the same pixel value. Afterwards we checked the sources to be resolved or not, deconvolving the beam and trying to fit the major and minor axis for our galaxies. However, the image component deconvolved from the beam resulted in a point source which had almost the same size or smaller than the beam size . As our sources are not resolved, so we decided to use the peak spectrum as described above instead of the integrated spectrum because in our case is more representative.\\  
+\section{Gaia Samples}
 
-\begin{figure}[!ht]
+The \textit{Gaia}-DR1 and-DR2 data was used to select stars which belong to the Sco-Cen OB association. The queries were carried out using the ADQL-query interface provided by the ESA (\url{https://gea.esac.esa.int/archive/}) and shown in \autoref{ch:Appendix} for each of the three regions conforming Sco-Cen i.e. LCC, UCL, and US. The approach was tested in \textit{Gaia}-DR1, but later on was extended to the new data provided by the DR2 to increase the sample of stars belonging to Sco-Cen, and also to increase the chance of matching a star with a light curve in the \textit{SuperWASP}-database. This will be addressed at the end. The most relevant parameters retrieved for each object are the RA and DEC coordinates, galactic longitude (l) and latitude (b), parallax, magnitude in the G-band, color G-Ks, and the proper motion in RA and DEC.\\    
+
+First of all, a sample based on previous physical parameters and values obtained for this association is needed in order to constrain the sample and avoid pollution from stars which may not be part of it. Following \cauthor{2018MNRAS.tmp..210W}\citeyear{2018MNRAS.tmp..210W}, the spatial distribution of the three regions were selected using the galactic coordinates cut reported by \cauthor{2012yCat..74163108R}\citeyear{2012yCat..74163108R} and \cauthor{1999AJ....117..354D}\citeyear{1999AJ....117..354D} as shown in \autoref{tab:ScoCen_SpatialDist}. Also in distance, using a parallax range from $6$mas to $12$mas which leads to a distance range of $\sim 83-167$pc. We decided to include a wide range in distance because Sco-Cen spanning distances are known to be $\sim 100-150$pc \cauthor{2018MNRAS.tmp..210W}\citeyear{2018MNRAS.tmp..210W}, so we can rule out any outliers based on the dynamics of the cluster. The spatial distribution of our sample is shown in \autoref{fig:Projection_ScoCen}. The blue, orange, and red dots represent LCC, UCL, and US respectively. It is clear that the Sco-Cen association covers a wide range in galactic longitude (l) $\sim 90$-deg, and $\sim 45$-deg in galactic latitude (b). Following this, initially each sub-region contains LCC $= 2310$, UCL $= 1759$, and US $= 1584$ stars respectively. However, as it is mentioned in \cauthor{2016MNRAS.461..794P}\citeyear{2016MNRAS.461..794P}, each region has a characteristic range for the proper motions given by the dynamics of each individual subgroup and the whole interaction. According tho their work, the three subgroups have a value of $\mu_\alpha < 10~\textnormal{mas}~\textnormal{yr}^{-1}$ and $\mu_\delta = 30~\textnormal{mas}~\textnormal{yr}^{-1}$, while for LCC, UCL, and US values of $15~\textnormal{mas}~\textnormal{yr}^{-1} < \mu < 55~\textnormal{mas}~\textnormal{yr}^{-1}$, $12~\textnormal{mas}~\textnormal{yr}^{-1} < \mu < 55~\textnormal{mas}~\textnormal{yr}^{-1}$, and $\mu < 47~\textnormal{mas}~\textnormal{yr}^{-1}$, respectively, are reported. This is better seen in \autoref{fig:Hist_ScoCen_Mamajek} where the histogram for the whole sample of stars selected in distance range are shown in colors, and each vertical dashed-line shows the above mentioned cuts for each subgroup. In the end, after this analysis, the query was performed taking into account the dynamical constraints of the cluster (see \autoref{ch:Appendix}).\\  
+
+\begin{table}[]
 \centering
-  \subfloat{\includegraphics[width=7.5cm,height=6cm]{./Graficos/Capitulo_2/ALESS031_1_Circles.png}} 
-  \subfloat{\includegraphics[width=7.5cm,height=6cm]{./Graficos/Capitulo_2/ALESS039_1_Circles.png}}
-\caption{\scriptsize{Circular regions used to constrained the region around the position of each source to look for the maximum flux. \textit{left} ALESS031.1 and \textit{right} ALESS039.1. In the case of ALESS039.1 there is a close companion which can interfere with the pixel value for the maximum flux, so both circles are large enough to contain the information of the right source and avoid possible contamination from nearby sources. the black solid circle corresponds to a radius of $0.5~\mathrm{arcsec}$ while the dashed circle to a radius of $1.0~\mathrm{arcsec}$. The red dot marks the position of the maximum emission pixel in our observations. The beam size is shown in the left corner.}}
-\label{fig: Circles}
-\end{figure}
-
-In \textcolor{RoyalBlue}{Figure} \ref{fig: Circles}, we have ALESS031.1 and ALESS039.1 as an example of the procedure described above. The black continuous lie corresponds to the $0.5~\mathrm{arcsec}$ circle while the dashed line to the $1.0~\mathrm{arcsec}$. The red point marks the position of the pixel where the maximum flux was coming from. This sources were chosen as example because ALESS31.1 is the type of source in our data which is well-defined with no other prominent sources around while ALESS39.1 has a close companion which makes the source a little bit extended. The size of the circular regions were chosen to contain all the information of one source in order to avoid mixing information from any other source nearby which could be somewhat brighter and then causing the pixel value to be chosen incorrectly. Once the pixel value was chosen, the flux ($\mathrm{mJy/beam}$) at a given frequency ($\mathrm{GHz}$) was extracted and stored in a file. This files were analysed after to search for any emission line that could have been detected during the survey. The fitting process and method used to accept or reject a given line are thoroughly explained in the next section.   
-
-
-\section{Line Fitting}
-\label{sec:LineFitting}
-
-Once the flux values at each frequency are extracted we need to find a way to fit the possible emission lines present. Each spectrum was divided into two ranges, one from $137~\mathrm{GHz}$ to $141~\mathrm{GHz}$ which includes the spectral windows `$0$' and `$1$', and other one from $149~\mathrm{GHz}$ to $153~\mathrm{GHz}$ including spectral windows `$2$' and `$3$'. Although all the results were carried out separately for both ranges, the same procedure was performed using the complete frequency range to check possible differences in the result. However, because the frequencies between spectral window `$1$' and `$2$' has no information because the observations were performed in this way, but both methods led the same results. Later, A subset of possible molecule transitions were chosen from (\textcolor{webgreen}{Spilker et al}, \citeyear{Spilker14}) and are summarized in \textcolor{RoyalBlue}{Table} \ref{tab: Molecules}. We decided to use these transitions because they are the result of stacking several sources in order to obtain the line intensity of a given molecule present in a SMG. Thus, we expect any line present in our observations to be at least consistent with the values reported by (\textcolor{webgreen}{Spilker et al}, \citeyear{Spilker14}). The expected frequency (i.e. observed frequency) was obtained using \textcolor{RoyalBlue}{Equation} \ref{eq:Frecuencia}, where the redshift corresponds to the spectroscopic redshift listed in \textcolor{RoyalBlue}{Table} \ref{tab: FinalSampleProperties} or the photometric in case the spectroscopic is unknown.\\ 
-
-\begin{table}[!ht]
-\centering
-\caption{\scriptsize{Transitions with fine or hyperfine structure taken from (\textcolor{webgreen}{Spilker et al}, \citeyear{Spilker14}). Frequencies correspond to the rest frame frequency in \textit{GHz}. } }
-\label{tab: Molecules}
-\resizebox{\textwidth}{!}{
-\begin{tabular}{lclclclclclc}
+\caption{\scriptsize{Something!}}
+\label{tab:ScoCen_SpatialDist}
+\begin{tabular}{lcccc}
 \hline
-\textbf{Line}& $\nu_\mathrm{res}~(\mathrm{GHz})$& \textbf{Line}& $\nu_\mathrm{res}~(\mathrm{GHz})$ & \textbf{Line}& $\nu_\mathrm{res}~(\mathrm{GHz})$ & \textbf{Line}& $\nu_\mathrm{res}~(\mathrm{GHz})$ & \textbf{Line}& $\nu_\mathrm{res}~(\mathrm{GHz})$ & \textbf{Line}& $\nu_\mathrm{res}~(\mathrm{GHz})$\\ 
-\hline
-\hline
-\textbf{CO}($1-0$)                    & 115.2712 & \textbf{HCN}($5-4$)                    & 443.1161  &  \textbf{H}$_2$\textbf{O}($4_{1,4}-3_{2,1}$) & 380.1974 & \textbf{OH}($446$)              & 446.2910  & \textbf{CS}($7-6$)                   & 342.8830  &  \textbf{CCH}($5-4$)  & 436.6604 \\
-\textbf{CO}($2-1$)                    & 230.5380 & \textbf{HCN}($6-5$)                    & 531.7164  &  \textbf{H}$_2$\textbf{O}($4_{2,3}-3_{3,0}$) & 448.0011 & \textbf{CN}(\textbf{N} $= 3-2$) & 340.2478  & \textbf{CS}($8-7$)                   & 391.8470  &  \textbf{CCH}($6-5$)  & 523.9704 \\
-\textbf{CO}($3-2$)                    & 345.7960 & \textbf{HCN}($7-6$)                    & 620.3040  &  \textbf{H}$_2$\textbf{O}($5_{3,3}-4_{4,0}$) & 474.6891 & \textbf{CN}(\textbf{N} $= 4-3$) & 453.6067  & \textbf{CS}($10-9$)                  & 489.7510  &  \textbf{CCH}($7-6$)  & 611.2650 \\
-\textbf{CO}($4-3$)                    & 461.0408 & \textbf{HCN}($8-7$)                    & 708.8770  &  \textbf{H}$_2$\textbf{O}($1_{1,0}-1_{0,1}$) & 556.9360 & \textbf{CN}(\textbf{N} $= 5-4$) & 566.9470  & \textbf{CS}($11-10$)                 & 538.6888  &  \textbf{CCH}($8-7$)  & 698.5416 \\
-\textbf{CO}($5-4$)                    & 576.2679 & \textbf{HNC}($3-2$)                    & 271.9811  &  \textbf{H}$_2$\textbf{O}($2_{1,1}-2_{0,2}$) & 752.0331 & \textbf{CN}(\textbf{N} $= 6-5$) & 680.2641  & \textbf{CS}($12-11$)                 & 587.6162  &  \textbf{H21}$\alpha$ & 662.4042 \\
-\textbf{CO}($6-5$)                    & 691.4731 & \textbf{HNC}($4-3$)                    & 362.6303  &  \textbf{H}$_2$\textbf{O}$^+$ $604$    & 604.6786 & \textbf{SiO}($7-6$)             & 303.9270  & \textbf{CS}($13-12$)                 & 636.5318  &  \textbf{H22}$\alpha$ & 577.8964 \\
-\leftidx{$^{13}$}{\textbf{CO($3-2$)}} & 330.5880 & \textbf{HNC}($5-4$)                    & 453.2699  &  \textbf{H}$_2$\textbf{O}$^+$ $607$    & 607.2273 & \textbf{SiO}($8-7$)             & 347.3306  & \textbf{CS}($14-13$)                 & 685.4348  &  \textbf{H23}$\alpha$ & 507.1755 \\
-\leftidx{$^{13}$}{\textbf{CO($4-3$)}} & 440.7652 & \textbf{HNC}($6-5$)                    & 543.8976  &  \textbf{H}$_2$\textbf{O}$^+$ $631$    & 631.7241 & \textbf{SiO}($9-8$)             & 390.7284  & \textbf{CS}($15-14$)                 & 734.3240  &  \textbf{H24}$\alpha$ & 447.5403 \\
-\leftidx{$^{13}$}{\textbf{CO($5-4$)}} & 550.9263 & \textbf{HNC}($7-6$)                    & 634.5108  &  \textbf{H}$_2$\textbf{O}$^+$ $634$    & 634.2729 & \textbf{SiO}($10-9$)            & 434.1196  & \textbf{NH}$_3$($1_0-0_0$)             & 572.4982  &  \textbf{H25}$\alpha$ & 396.9008 \\
-\leftidx{$^{13}$}{\textbf{CO($6-5$)}} & 661.0673 & \textbf{HNC}($8-7$)                    & 725.1073  &  \textbf{H}$_2$\textbf{O}$^+$ $721$    & 721.9274 & \textbf{SiO}($11-10$)           & 477.5031  & \textbf{N}$_2$\textbf{H}$^+$($3-2$)  & 279.5117  &  \textbf{H26}$\alpha$ & 353.6227 \\
-\textbf{C}$^{18}$\textbf{O}($3-2$)    & 329.3305 & \textbf{HCO}$^+$($3-2$)                & 267.5576  &  \textbf{H}$_2$\textbf{O}$^+$ $742$    & 742.1090 & \textbf{SiO}($12-11$)           & 520.8782  & \textbf{N}$_2$\textbf{H}$^+$($4-3$)  & 372.6725  &  \textbf{H27}$\alpha$ & 316.4154 \\
-\textbf{C}$^{18}$\textbf{O}($4-3$)    & 439.0888 & \textbf{HCO}$^+$($4-3$)                & 356.7342  &  \textbf{H}$_2$\textbf{O}$^+$ $746$    & 746.5417 & \textbf{SiO}($13-12$)           & 564.2440  & \textbf{N}$_2$\textbf{H}$^+$($5-4$)  & 465.8250  &  \textbf{H28}$\alpha$ & 284.2506 \\
-\textbf{C}$^{18}$\textbf{O}($5-4$)    & 548.8310 & \textbf{HCO}$^+$($5-4$)                & 445.9029  &  \textbf{H}$_2$\textbf{O}$^+$ $761$    & 761.8188 & \textbf{SiO}($14-13$)           & 607.5994  & \textbf{N}$_2$\textbf{H}$^+$($6-5$)  & 558.9667  & ~           & ~        \\
-\textbf{C}$^{18}$\textbf{O}($6-5$)    & 658.5533 & \textbf{HCO}$^+$($6-5$)                & 535.0616  &  \textbf{LiH}($1-0$)                   & 443.9529 & \textbf{SiO}($15-14$)           & 650.9436  & \textbf{N}$_2$\textbf{H}$^+$($7-6$)  & 652.0959  & ~           & ~        \\
-\textbf{CI}($1-0$)                    & 492.1606 & \textbf{HCO}$^+$($7-6$)                & 624.2085  &  \textbf{CH}($532$)                    & 532.7239 & \textbf{SiO}($16-15$)           & 694.2754  & \textbf{N}$_2$\textbf{H}$^+$($8-7$)  & 745.2103  & ~           & ~        \\
-\textbf{HCN}($3-2$)                   & 265.8864 & \textbf{HCO}$^+$($8-7$)                & 713.3414  &  \textbf{CH}($536$)                    & 536.7614 & \textbf{SiO}($17-16$)           & 737.5939  & \textbf{CCH}($3-2$)                  & 262.0042  & ~           & ~        \\
-\textbf{HCN}($4-3$)                   & 354.5055 & \textbf{H}$_2$\textbf{O}($5_{1,5}-4_{2,2}$)  & 325.1529  &  \textbf{OH}($425$)                    & 425.0363 & \textbf{CS}($6-5$)              & 293.9122  & \textbf{CCH}($4-3$)                  & 349.3387  & ~           & ~        \\
- \hline                                                                                                                                                                                             
+Sub-group             & l$_{-}$ {[}deg{]} & l$_{+}$ {[}deg{]} & b$_{-}$ {[}deg{]} & b$_{+}$ {[}deg{]} \\ \hline \hline
+Lower Centaurus Crux  & 285               & 313               & -10               & 16                \\
+Upper Centaurus Lupus & 313               & 337               & 5                 & 31                \\
+Upper Scorpius        & 337               & 360               & 7                 & 32                \\ \hline \hline
 \end{tabular}
-}
 \end{table}
 
-\begin{equation}
- 1 + z = \frac{\nu_\mathrm{emi}}{\nu_\mathrm{obs}}
- \label{eq:Frecuencia}
-\end{equation}
-
-In \textcolor{RoyalBlue}{Figure} \ref{fig: Fit-Example} we have ALESS006.1 and ALESS059.2 with the position of expected molecule transitions from (\textcolor{webgreen}{Spilker et al}, \citeyear{Spilker14}) plotted on the given frequency range. The vertical lines correspond to the transitions and the continuous green line to the source spectrum. The vertical axis is the flux in $\mathrm{mJy}/\mathrm{beam}$ while the horizontal axis corresponds to the frequency in $\mathrm{GHz}$. Once the expected frequency position is known i.e the $\nu_\mathrm{obs}$ in \textcolor{RoyalBlue}{Equation} \ref{eq:Frecuencia}, we can use it as a initial guess in order to fit any feature around it. However, the fitting-script fits the most reliable feature close to the line, then even if the redshifts (i.e spectroscopic or photometric) are wrong, the most conspicuous feature in the spectrum is fitted. Thus, if some discrepancy pops up between the expected line and a given prominent feature in the spectrum we can start thinking about how well the redshift is measured for a given source as provided by (\textcolor{webgreen}{Danielson et al}, \citeyear{Danielson17}) and probably better constrain it through our spectroscopic analysis.\\
-
-We used two fitting functions: a \textit{Gaussian} for the emission line and a \textit{Line} to trace the continuum. In \textcolor{RoyalBlue}{Equation} \ref{eq: Gauss} the Gaussian amplitude `\textit{A}' was constrained to be positive, the mean frequency `\textit{$\mu$}' was set to the expected frequency and the constant `\textit{C}' also to be positive'. In the case of linear-fit (\textcolor{RoyalBlue}{Equation} \ref{eq: Linear}) we used just a constant, since over the $7.5~\mathrm{GHz}$ band width the change in slope is negligible (specially given the noise).\\ 
-
-\begin{align}
- \mathbf{G}(A, \mu, \sigma, C; x) &= A\mathit{e}^{-\frac{x - \mu}{2 \sigma^2}} + C
- \label{eq: Gauss}\\
- \mathbf{L}(B) &= B
- \label{eq: Linear}
-\end{align}
+\begin{figure}[!ht]%
+    \centering
+    \subfloat{{\includegraphics[width = 16cm, height = 5.5cm]{./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_1.png} }}%
+    \qquad
+    \subfloat{{\includegraphics[width = 16cm, height = 5.5cm]{./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_2.png} }}%
+    \qquad
+    \subfloat{{\includegraphics[width = 16cm, height = 5.5cm]{./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_3.png} }}%
+    \caption{\scriptsize{Something!}}%
+    \label{fig:Hist_ScoCen_Mamajek}%
+\end{figure}  
 
 \begin{figure}[!ht]
 \centering
-  \subfloat{\includegraphics[width=7.75cm,height=6.5cm]{./Graficos/Capitulo_2/Spectra/ALESS006_2.png}} 
-  \subfloat{\includegraphics[width=7.75cm,height=6.5cm]{./Graficos/Capitulo_2/Spectra/ALESS059_1.png}}
-\caption{\scriptsize{Likely molecules to be present in the ALESS sources plotted along the source spectrum. The red and blue vertical lines represent the most likely emission lines to be present given the redshift of the source. The green continuous line is part of the spectrum only comprising the spectral range where a line was predicted to be in. \textit{left} ALESS006.1 in a frequency range containing spectral windows `$0$' and `$1$'. \textit{right} ALESS059.2 in a frequency range containing spectral windows `$2$' and `$3$'.}}
-\label{fig: Fit-Example}
+  \subfloat{\includegraphics[width = 12cm, height = 7cm]{./Graficos/Capitulo_3/5_Sco-Cen/Sco_Cen_Projection_flipped.png}} 
+\caption{\scriptsize{Something!}}
+\label{fig:Projection_ScoCen}
 \end{figure}
 
-To accept or reject an emission line we will compare how reliable is the Gaussian fit over the continuum fit. This was addressed using the $\chi^2$-difference which is directly related to the signal-to-noise ratio of our detections and the relative error. We described it in detail in the next subsection.  
+This cut-off in proper motion and parallax leads to a new sample of LCC $= 1010$, UCL $= 746$, and US $= 797$ stars respectively, in which we have ruled out stars which certainly do not belong to the association. The next step is to narrow down the sample based on the stellar evolution of the cluster. This was performed using evolutionary tracks in which we aimed to use low mass stars as they are the ones with higher probabilities of exo-ring transits as shown before, and also using isochrones to restrict each sample in stellar age. This is thoroughly explained in \autoref{sec:SEM_1}.   
 
 
-\subsection{$\chi^2$ difference and goodness of fit}
-\label{ssec: ChiDiff}
+%============================================================================================================================================================
 
-One of the main goals of this project is to properly analyse and treat the spectra obtained. As was shown in  \textcolor{RoyalBlue}{Section} \ref{sec:LineFitting} and later explained in \textcolor{RoyalBlue}{Sub-section} \ref{ssec: FitParamSec}, we will fit a Gaussian to the possible spectral lines in our spectra. Then, we need to test how well is this fit for a given feature in order to decide if a line is real or not compared to the rest of the data. This process will be performed using the well known $\chi^2$-squared test of goodness of fit, due to the fact that it directly relates to the signal-to-noise of our detections.\\
+\section{Stellar Evolution Models}\label{sec:SEM_1}
 
-The $\chi^2$-squared test is used when we have a nominal variable and we want to see weather the observations in each category fits a theoretical expectation and the sample size is large. This test as most of the statistical tests, does not calculates directly the probability of obtaining the observed results. Instead, it used the data we have measured to compute a test statistic that measures how far the observed are from the null expectation. Then, it uses a mathematical relation, which in this case is the `$\chi^2$-squared' distribution to estimate the probability of obtaining the value of the test statistic. The test statistics, on the other hand, is obtained taking our observations and subtracting from them the expected number. In both cases, the expectation and observed values could be a number or just a function. Then we square the difference and weight by the expected number. Finally, we add up all this values to compute the final value as can be seen in \textcolor{RoyalBlue}{Equation} \ref{eq: ChiSquareDiff}. 
-
-\begin{equation}
- \mathlarger{\mathlarger{\chi^2}} = \mathlarger{\mathlarger{\sum}} \frac{(\mathrm{Observed} - \mathrm{Expected})^2}{Expected}
- \label{eq: ChiSquareDiff}
-\end{equation}
-
-The larger the deviation from the null hypothesis (assuming that there is or not a significant difference between the expected and observed values), the larger the difference between the observed and expected values. According to this reasoning the value we expect for the $\chi^2$ must be as small as possible in order guarantee that our expectations are pretty close to our observations. Thus, what we look for is to minimize \textcolor{RoyalBlue}{Equation} \ref{eq: ChiSquareDiff}.\\
-
-From other point of view, this can be seen as the sum of the squared deviations of points from a given function, normalized by the variances. Then we have a direct relation between the $\chi^2$  and the relative error which is defined as ratio of the standard deviation to the mean. More importantly, this directly translates into a relation to the signal-to-noise which is basically the inverse of the relative error. Hence, minimizing the $\chi^2$ can be understood as reducing the relative error and increasing the signal-to-noise ratio.\\
-
-As will be explain in \textcolor{RoyalBlue}{Sub-section} \ref{ssec: FitParamSec}, we want to compare two fits. Therefore, we want to find the minimum value between both $\chi^2$, making the $\Delta \chi^2$ as large as possible to guarantee enough signal-to-noise in our observations. We decided to apply this method in our data, in some way following (\textcolor{webgreen}{Swinbank et al}, \citeyear{Swinbank12}), because the continuum in their data is not so strong as is our case. Then, we decided to fit a line to the continuum without any slope and a Gaussian to the line, to find any emission lines in the ALESS sources sub-sample we have. In \textcolor{RoyalBlue}{Figure} \ref{fig: SwinbankTest}, we show the fitting performed by (\textcolor{webgreen}{Swinbank et al}, \citeyear{Swinbank12}) in order to clarify what we expect in our observations and how we expect the fits to look in the end. 
+The highest transit probability was obtained for low mass stars. As shown in \autoref{fig:Rings_Prob}, the probability of detecting rings transiting in front of the parent stars decreases as the stellar mass increases independent of the life time for the planetary rings which only causes a vertical shift i.e. a chance in the expected number of transits. Therefore, it is important to select a reliable sample of stars in Sco-Cen which can lead to a high chance of detecting this kind of transits. The first step consisted in taking the sample mentioned above in which a cut-off in the dynamics and distance for the association has been applied, and run different stellar track models with an initial value of extinction $\textnormal{A}_\textnormal{v} = 0$ for each sub-region using the \textit{MIST}-package. In \autoref{fig:Stellar_Tracks_1}, the color-magnitude diagram for each sub-region is presented for $\textnormal{G}$- and $\textnormal{K}_\textnormal{s}$-bands. The magnitudes were obtained using \textit{Gaia}-DR1 and transformed to absolute magnitude (see \autoref{ch:Appendix}). The color was computed using a cross-match identification of the sources in \textit{Gaia}-DR1 with \textit{The Two Micron All-Sky Survey} (2MASS) tables. The stellar tracks shown correspond to stellar masses from $0.5 \textnormal{M}_\odot$ to  $2.1 \textnormal{M}_\odot$ in steps of $0.4 \textnormal{M}_\odot$, which were computed for the required photometric bands in \textit{Gaia} and \textit{2MASS}. Although each sub-region shows different spread, the stars seem to be distributed mostly below the $1.3 \textnormal{M}_\odot$ stellar track. Therefore, no-extra cut-off in mass in needed because if one compares to \autoref{fig:Rings_Prob} the highest probabilities lie below $2.0 \textnormal{M}_\odot$. The same conditions were assumed to compute the isochrones shown in \autoref{fig:Isochrones_1}. Each figure corresponds to the LCC, UCL, and US color-magnitude diagrams with isochrones of $5, 15, 20, 30$- and $60$-Myr. The upper isochrone, is the youngest ($5$-Myr) while the lower represents the oldest ($60$-Myr). In each of the three cases, most of the stars are contained in between the youngest and the oldest isochrones. It is useful to have in mind that all the isochrones are computed without extinction factor which is the ideal scenario. A few stars lie outside the isochrones delimited region, thus, the idea is to use the isochrones and only use those stars that satisfy the absolute magnitude $\textnormal{M}_\textnormal{G}$ and color $\textnormal{G} - \textnormal{K}_\textnormal{s}$ conditions in between both isochrones. After obtaining only those stars in between the isochrones the final sample is reduced to LCC $= 868$, UCL $= 633$, and US $= 649$ stars respectively. This is shown in \autoref{fig:Isochrones_2} where one can observe how the initial distribution of stars is already contained in a region delimited by the isochrones. For comparison in \autoref{ch:Appendix}, \autoref{sec:Sample_Selection_1}, it is shown the original sample of stars without performing the proper motion and parallax cut-off in color versus the sample after using \cauthor{2016MNRAS.461..794P}\citeyear{2016MNRAS.461..794P} constraints in black-dots for each sub-region in \autoref{fig:Stellar_Tracks_1_appendix} and \autoref{fig:Isochrones_1_appendix}.\\       
 
 \begin{figure}[!ht]
 \centering
-  \subfloat{\includegraphics[width=8.5cm,height=10cm]{./Graficos/Capitulo_3/Line_3.png}} 
-\caption{\scriptsize{\textit{Top}: ALESS65.1 spectrum with Gaussian fitting. \textit{Bottom}: ALESS61.1 spectrum with Gaussian fitting. In both cases the y-axis is expressed in $\mathrm{mJy}$ and the x-axis in $\mathrm{GHz}$. Both detections satisfy a criterion of having a $\Delta \chi^2 > 20$ which corresponds to $\sigma > 4$ detection as shown in (\textcolor{webgreen}{Swinbank et al}, \citeyear{Swinbank12}).}}
-\label{fig: SwinbankTest}
-\end{figure}
-
-This method will be follow to analyse our data, where we also take as real detections only those sources where the $\Delta \chi^2 > 25$ to guarantee detections above $\sigma = 5$ and a good signal-to-noise ratio. This process is explained immediately. 
-
-\subsection{Acceptance method and Fitting parameters}
-\label{ssec: FitParamSec}
-
-As has been shown in \textcolor{RoyalBlue}{Sub-section} \ref{ssec: ChiDiff}, we need to minimize the $\chi^2$ to properly say that a certain fitting function is representative of the present feature or not. However, we have two functions so we need to compare them and see which one is the best. According to this if the $\chi^2$-difference between the line and Gaussian fitting is positive, we say the Gaussian fit is better than the line fit because the Gaussian $\chi^2$ is smaller than the line $\chi^2$, thus the line could be partially accepted. If the $\chi^2$-difference between the line and Gaussian fitting is negative, then the line fitting is better so the emission line is not reliable. We must guarantee good signal-to-noise ratio, so the $\chi^2$ difference must be larger than $25$ to be accepted which corresponds to a $5~\sigma$ detection. This is summed up in \textcolor{RoyalBlue}{Equation} \ref{eq: Diff}. \textit{In concreto}, if the $\chi^2$ difference is positive and larger than $25$ the line is assumed to be a real detection. We applied this method to our $51$ targets using the possible emission lines expected in each case given the redshift of the source. The parameters retrieved in each case are the Gaussian amplitude `A', the mean frequency $\mu$, the constant $C$, the variance $\sigma$, and the constant `B'. Using this, we are able to compute the full-width half maximum \textbf{FWHM} of the line given by \textcolor{RoyalBlue}{Equation} \ref{eq: FWHM-RV}, where $\sigma$ is given in $km~s^{-1}$. To change from frequency to velocity we used the well-known radio velocity definition (see \textcolor{RoyalBlue}{Equation} \ref{eq: FWHM-RV}) which will facilitate calculations of different physical properties for the sources.\\
-
-\begin{align}
- \chi^2_{\mathrm{line}} - \chi^2_{\mathrm{gaussian}} &> 0~~~~;~~~~\mathrm{Accepted} \nonumber \\
- \chi^2_{\mathrm{line}} - \chi^2_{\mathrm{gaussian}} &< 0~~~~;~~~~\mathrm{Rejected}
- \label{eq: Diff}
-\end{align}
-
-\begin{align}
- FWHM &\approx 2.35\sigma \\
- v_{\mathrm{rad}} &= c\left(1 - \frac{\nu}{\nu_o}\right)
- \label{eq: FWHM-RV}
-\end{align}
-
-Most of the galaxies which had a possible emission line did not satisfied the criteria (i.e. $\chi^2$ differences was either less than 20 or negative) so they were rejected. In most of the cases it was below $10$. However, two sources ALESS070.1 and ALESS122.1 did show an evident line and satisfied the criteria imposed above. Then, we only ended up with the two reliable detections in two sources of the 51 targets clearly detected in this survey. In \textcolor{RoyalBlue}{Figure} \ref{fig: FitSample_1} we have the final spectrum for the last two sources where the \textit{x-axis} corresponds to the frequency in GHz and the \textit{y-axis} to the flux in $\mathrm{mJy}/\mathrm{beam}$. The green line represents the Gaussian fit and the dashed-yellow line the continuum fit shown above in \textcolor{RoyalBlue}{Equation} \ref{eq: Gauss} and \textcolor{RoyalBlue}{Equation} \ref{eq: Linear}. The black vertical line is the most likely transition expected from \textcolor{RoyalBlue}{Table} \ref{tab: Molecules} for both galaxies which led to the green fit after using this frequency as initial guess. We see that for ALESS122.1 the fit matches really well for a CO($4-3$) transition whilst not so well for ALESS070.1, though is really prominent.\\
-
-As was briefly introduced in \textcolor{RoyalBlue}{Chapter} \ref{ch:Theoretical},  (\textcolor{webgreen}{Danielson et al}, \citeyear{Danielson17}) carried out an optical spectroscopic study of the ALESS-sources in order to obtain well-determined spectroscopic redshift as part of the zLESS project. The details of their observations are shown right away. The observing campaign was addressed using the FOcal Reducer and low dispersion Spectrograph (FORS2) and Visible MultiObject Spectrograph (VIMOS) on VLT. However, in order to increase the wavelength coverage and to supplement the observations also the XSHOOTER on VLT, the Gemini Near-infrared Spectrograph (GNIRS) and the Multi-Object Spectrometer for Infra-Red Exploration (MOSFIRE)were used. They observed around $100$ hours each with VIMOS and FORS because SMGs typical redshifts are expected to have $\mathrm{Ly}_\alpha$, UV ISM lines and [OIII] emission which could be really faint. Using FORS2, they observed on every source for $4.5$ hours in wavelengths $\lambda = 3300 - 11000\AA$ and a typical resolution of $\mathrm{R}\sim660$. Using VIMOS they used the OS-blue order sorting filter ($\sim4000-6700\AA$) with a resolution of $\mathrm{R}\sim180$ and exposure time of $3-9$ hours. As was mentioned above, to complement these observations they used the XSHOOTER to target $20$ ALESS SMGs with $4 \times 600$s exposures per source, covering wavelength ranges of $3000-5600\AA, 5500-10200\AA$ and $10200-24800\AA$ for the UV (UVB), visible (VIS) and near-infrared (NIR) arms respectively. With the MOSFIRE spectrograph on Keck I they targeted $36$ SMGs in bands H($1.46-1.81\mu \mathrm{m}$) and K($1.93-2.45\mu \mathrm{m}$) with resolution $\mathrm{R}\sim3270$. The exposure time was set to $120$s in H-band and $180$s in K-band per source. DEIMOS on Keck II and GNIRS to target $71$ and eight SMGs respectively. With DEIMOS they used $1200$s exposure time on source with a resolution of $\mathrm{R}\sim3000$ and with GNIRS $\sim1.5$ hour per source with $\mathrm{R}\sim1700$ resolution. Only two SMGs redshifts were obtained with ALMA [CII] observations (ALESS61.1 and ALESS65.1).\\ 
-
-Aside from this, we must have in mine that all the spectroscopic redshifts shown in \textcolor{RoyalBlue}{Table} \ref{tab: FinalSampleProperties} have a quality factor denoted by $\textrm{Q}$ (see \textcolor{webgreen}{Danielson et al}, \citeyear{Danielson17}) which goes from $1$ to $4$, where $\textrm{Q} = 1$ is a really well measured and trusty spectroscopic redshift, $\textrm{Q} = 2$ corresponds to a redshift measured from only one or two  strong lines,$\textrm{Q} = 3$ is a tentative redshift measured based on one or two very faint features and $\textrm{Q} = 4$ for sources which no redshift could be determined. For our two sources, we must say that in the case of ALESS070.1 $\textrm{Q} = 3$, meaning that the possible line used is too faint, so in that case the redshift used to predict the position of the line (black vertical line in \textcolor{RoyalBlue}{Figure} \ref{fig: FitSample_1}) was the photometric redshift. In the case of ALESS122.1, $\textrm{Q} = 1$ then in this case we trust completely in the spectroscopic redshift. The spectra provided by (\textcolor{webgreen}{Danielson et al}, \citeyear{Danielson17}) are shown in \textcolor{RoyalBlue}{Figure} \ref{fig: DanielsonSpectra} for ALESS070.1 and ALESS122.1. In \textcolor{RoyalBlue}{Sub-section} \ref{ssec: Aless70} the process carried out to study this discrepancy is addressed in more detail. Measuring redshifts for SMGs is a really hard task. This demands a lot of telescope time and sometimes these galaxies do not have an evident optical counterpart to compare with. Performing serendipitous blind line search with ALMA is a good method to overcome this issue because we do not need to target a special emission line but we can observe different emission lines in  a given band width which helps us to find the spectroscopic redshifts with high accuracy. \\
-
-\begin{figure}[!ht]
-\centering
-  \subfloat{\includegraphics[width=7.75cm,height=6.5cm]{./Graficos/Capitulo_2/Spectra/ALESS070.png}} 
-  \subfloat{\includegraphics[width=7.75cm,height=6.5cm]{./Graficos/Capitulo_2/Spectra/ALESS122.png}}
-\caption{\scriptsize{ALESS070.1 and ALESS122.1 spectrum. In the \textit{x-axis} the frequency in GHz while in the \textit{y-axis} the flux in mJy/beam. The green line represents the Gaussian fit while the dashed-yellow line the continuum. The vertical black line corresponds to the most likely molecule transition expected given the spectroscopic redshift for ALESS122.1 and the photometric redshift for ALESS070.1. In both cases CO($4-3$) is the possible molecular transition.}}
-\label{fig: FitSample_1}
-\end{figure}
-
-In \textcolor{RoyalBlue}{Table} \ref{tab: FitParam_1}, we summarize the fitting parameters for our two line detections. This values will be used throughout the next sections to compute different physical properties of this two SMGs.\\ 
-
-\begin{table}[!ht]
-\centering
-\caption{\scriptsize{Fitting parameters obtained for ALESS070.1 and ALESS122.1. The redshift $\mathrm{z}$ corresponds to the photometric for ALESS070.1 and the spectroscopic for ALESS122.1 as reported by (\textcolor{webgreen}{Danielson et al}, \citeyear{Danielson17}) while the $\mathrm{z~(mean~frequency)}$ corresponds to our measurements through the CO detection.} }
-\label{tab: FitParam_1}
-\resizebox{0.5\textwidth}{!}{
-\begin{tabular}{lcc}
-\hline
-\textbf{Name}& \textbf{ALESS070.1}& \textbf{ALESS122.1}\\ 
-\hline
-\hline
-Amplitude $A~(\mathrm{mJy/beam})$ & $3.24 \pm 0.40$ & $5.72 \pm 0.39$\\
-Mean frequency $\mu~(\mathrm{GHz})$ & $138.88 \pm 0.02$ & $152.44 \pm 0.01$\\
-Variance $\sigma$ & $0.15 \pm 0.01$ & $0.12 \pm 0.01$\\
-Constant $C~(\mathrm{mJy/beam})$ & $0.23 \pm 0.06$ & $0.34 \pm 0.09$\\
-Constant $B~(\mathrm{mJy/beam})$ & $0.44 \pm 0.09$ & $0.83 \pm  0.19$\\
-$\mathrm{FWHM~(\mathrm{GHz})}$ & $0.35 \pm 0.03$& $0.29 \pm 0.02$\\
-$\mathrm{FWHM~(\mathrm{km~s^{-1}})}$ & $758.03 \pm 74$ & $621 \pm 41$\\
-$\Delta \chi^2$ & $\sim 31$ & $\sim 101$\\
-$\mathrm{z}$ & $2.28$ & $2.0232$ \\
-$\mathrm{z~(mean~frequency)}$ & $2.3197$ & $2.0252$\\
-\hline                                                                                                                                                                                             
-\end{tabular}
-}
-\end{table}
-
-After finding a possible discrepancy due to the lack of information in the redshift for ALESS070.1 we decided to double check the spectra available for these sources. In \textcolor{RoyalBlue}{Figure} \ref{fig: DanielsonSpectra} the 1-D and 2-D spectra are shown for both sources. In both cases, we present the flux versus frequency for 1-D spectrum and pixel value versus frequency in the case of the 2-D spectrum. For ALESS070.1, the possible transition line corresponds to $\mathrm{Lyman} \alpha$, however the spectrum it is too noisy and we cannot conclude anything neither from the 1-D nor the 2-D spectrum. If we do not use the redshift found by (\textcolor{webgreen}{Danielson et al}, \citeyear{Danielson17}) but the one we find using the mean frequency of the line from our fitting, we get the line position shifted ( \textcolor{RoyalBlue}{Figure} \ref{fig: DanielsonSpectra} left-side) but once again no special feature which could tempt us to say that the quality factor for this source could improve. Then, for ALESS070.1 we decided to use both the photometric redshift and our measured redshift for later comparisons. For ALESS122.1, we clearly see different emission and absorption lines (CII, CIII, CIV, SiII, SiIV and HeII) and a strong blue continuum which gives rise to different values of redshift but pretty close to each other and in average equal to the redshift reported by this author. Then, we will keep on working with this spectroscopic redshift. In both cases we drew the lines for the possible line positions as shown in right-side plots. Additionally, we plotted in the left-side the line position using the redshift we found through the fitting in \textcolor{RoyalBlue}{Table} \ref{tab: FitParam_1}. Although for ALESS122.1 the change is not noticeable, for ALESS070.1 as mentioned before there is a shift which yields to no better conclusions about its redshift.     
-
-\begin{figure}[!ht]
-\centering
-  \subfloat{\includegraphics[width=7.5cm,height=6.5cm]{./Graficos/Capitulo_3/Danielson/ALESS070_UVB.png}} 
-  \subfloat{\includegraphics[width=7.5cm,height=6.5cm]{./Graficos/Capitulo_3/Danielson/ALESS070_UVB_MyLine.png}}\\
-  \subfloat{\includegraphics[width=7.9cm,height=6.5cm]{./Graficos/Capitulo_3/Danielson/ALESS122_Composite.png}} 
-  \subfloat{\includegraphics[width=7.9cm,height=6.5cm]{./Graficos/Capitulo_3/Danielson/ALESS122_Composite_Mine.png}}  
-\caption{\scriptsize{ALESS070.1 and ALESS122.1 spectra in the optical. \textit{top:} ALESS070.1 1-D (flux vs frequency) and 2-D (pixel value vs frequency) spectrum obtained with  VLT/FORS2 and VLT/XSHOOTER. \textit{bottom:} ALESS122.1 1-D (flux vs frequency) and 2-D (pixel value vs frequency) spectrum obtained with VLT/FORS2 and VLT/VIMOS. Vertical lines correspond to most likely transitions as presented by (\textcolor{webgreen}{Danielson et al}, \citeyear{Danielson17}). Difference between \textit{left} and \textit{right} images is the line position which was computed using different values of redshift. In the \textit{left} we show the original values obtained by (\textcolor{webgreen}{Danielson et al}, \citeyear{Danielson17}) while in the \textit{right} we used the redshift found using the mean frequency obtained from the fitting as reported in \textcolor{RoyalBlue}{Table} \ref{tab: FitParam_1}.}}
-\label{fig: DanielsonSpectra}
-\end{figure}
-
-Summing up, all the values presented in \textcolor{RoyalBlue}{Table} \ref{tab: FitParam_1} will be used to compute the most relevant physical properties in order to characterize this two sources, because at least for ALESS122.1 the results are in agreement with values reported in the literature and for ALESS070.1 our results probably show new insights about the distance of this source adding valuable information. In \textcolor{RoyalBlue}{Sub-section} \ref{ssec: Aless70} we address the process we performed to double check ALESS070.1.
-
-\subsection{Spectroscopic redshift for ALESS070.1} \label{ssec: Aless70}
-
-As has been presented above, for ALESS070.1 we cannot conclude that the spectroscopic redshift reported by (\textcolor{webgreen}{Danielson et al}, \citeyear{Danielson17}) is reliable. However, even using the photometric one the most likely transition expected from (\textcolor{webgreen}{Spilker et al}, \citeyear{Spilker14}) lies close to the spectral window gap (see \textcolor{RoyalBlue}{Figure} \ref{fig: ALESS70Test}) in a place where no conspicuous emission is visible but close to the really prominent feature. The position of each spectral window is decided by the P.I. of the project. As these observations were not targeted to observed a given spectral line but dust continuum, if any line is present there is a chance that it falls exactly in between the spectral window gaps. This is basically the case of ALESS070.1. In spite of this, due to the conspicuous emission line present in \textcolor{RoyalBlue}{Figure} \ref{fig: FitSample_1} we derived a redshift using a Gaussian-fit and taking the mean frequency as the observed frequency in \textcolor{RoyalBlue}{Equation} \ref{eq:Frecuencia}. The redshift found was computed using the CO(4-3) transition and its value is closer to the photometric redshift reported by (\textcolor{webgreen}{Danielson et al}, \citeyear{Danielson17}) and at least between the upper limit error. To tackle down this problem and to be pretty sure that our observation corresponds to a CO(4-3) transition, we studied the bunch of possible emission lines which could lie near this emission feature using the photometric and spectroscopic redshift. In the end, comparing the chance to detect the possible obtained emission lines to CO transitions were less likely to be detected because in any case the CO line was pretty close, so if we observe any other molecule emission, the CO line should be present because they are expected to be brighter in comparison to any other emission lines as shown in (\textcolor{webgreen}{Spilker et al}, \citeyear{Spilker14}). Even if a given line were supposed to be elsewhere near the main emission found for ALESS070.1, the $\chi^2$ difference criterion rule them out because they would not fit very well as a Gaussian profile making the continuum fitting the best choice, so the Gaussian fit is not reliable.
-
-\begin{figure}[!ht]
-\centering
-  \subfloat{\includegraphics[width=7.75cm,height=6.5cm]{./Graficos/Capitulo_3/ALESS070_Spec.png}} 
-  \subfloat{\includegraphics[width=7.75cm,height=6.5cm]{./Graficos/Capitulo_3/ALESS070_Phot.png}}
-\caption{\scriptsize{ALESS070.1 spectrum with possible molecule transition from (\textcolor{webgreen}{Spilker et al}, \citeyear{Spilker14}). \textit{left:} possible transitions using the spectroscopic redshift. \textit{right:} possible molecule transitions using the photometric redshift. Both redshifts as reported by (\textcolor{webgreen}{Danielson et al}, \citeyear{Danielson17})}}
-\label{fig: ALESS70Test}
-\end{figure}
-
-In \textcolor{RoyalBlue}{Figure} \ref{fig: ALESS70Test}, we present the possible emission lines for ALESS070.1 using the spectroscopic redshift (\textit{left}) and photometric redshift (\textit{right}). In the case of the spectroscopic redshift both transitions OH(425) and SiO(10-9) lie aside the central emission and both are not pretty common to be found in this type of galaxies in comparison to CO-transitions. So if this redshift is correct, the expected molecule transitions do not match the current data and we cannot say anything about the line. However, using the photometric redshift we have three new possibilities which corresponds to CO(4-3), HNC(5-4) and CN(4-3). Here, if this was the case, we expect the line to be CO(4-3) because is brighter and more likely to be present compared to the other ones. Based on this, and on the mean frequency obtained through the Gaussian fit in \textcolor{RoyalBlue}{sub-section} \ref{ssec: FitParamSec} we potentially think that this transition corresponds to carbon monoxide.\\
-
-\begin{figure}[!ht]
-\centering
-  \subfloat{\includegraphics[width=12.5cm,height=11cm]{./Graficos/Capitulo_3/CO_Band4.png}} 
-\caption{\scriptsize{Different molecule transitions expected in the ALMA band4 for a few common molecules. The grey band shows the whole range in frequency covered in band4, whilst the green, purple, red and dark-grey show the four spectral windows used in our observed-data. Both, ALESS070.1 and ALESS122.1 are shown in the position expected through the line fitting obtained above (i.e redshift and observed mean frequency). A few possible transitions for CO, HCN and [CI] are shown in order to illustrate how different redshifts for a given spectral window can lead to different expected emission lines.}}
-\label{fig: BandsAless}
-\end{figure}
-
-As an illustration, in \textcolor{RoyalBlue}{Figure} \ref{fig: BandsAless} we have the redshift versus the observed frequency for the ALMA band4. The grey band represent the whole band4 while the small colored bands show the 4 spectral windows we have in the observations as selected by Dr. Elisabete da Cunha the P.I of these data. The different curves show how the observed frequency for a given molecule transition changes with redshift and its most-likely position expected to be observed in the ALMA band4. These curves were obtained with \textcolor{RoyalBlue}{Equation} \ref{eq:Frecuencia} where the emission frequency adopted was the same as in (\textcolor{webgreen}{Spilker et al}, \citeyear{Spilker14}) for a given transition. Both targets ALESS070.1 and ALESS122.1 are shown as little stars using the redshift found through our analysis. As we have said before, ALESS122.1 matches perfectly the CO-transition ($4\rightarrow3$) as can be seen. Although for ALESS070.1 we have adopted the redshift found by the fit assuming the same transition, we can clearly see that the line emission characterization strongly depends on the quality of the measured redshift for the source. One can wrongly characterize an emission line because transitions of different molecules at a given frequency can be observe in the same spectral window depending on redshift. Nevertheless, taking into account all the arguments exposed above, we expect any other molecule transition to be less intense than a CO-emission if present. Additional observation in a different band could definitely proof if the redshift found here either corresponds to the correct one or it is between the upper/lower limits.       
-
-\subsection{SLED for ALESS122.1}
-\label{ssec: Aless122}
-
-\begin{figure}[!ht]
-\centering
-  \subfloat{\includegraphics[width=9.5cm,height=7.5cm]{./Graficos/Capitulo_3/SLED122.png}} 
-\caption{\scriptsize{Results for the CO SLED (Spectral Line Energy Distribution) of ALESS122.1. The \textit{x-axis} corresponds to the upper J transition and the \textit{y-axis} to the integrated intensity $\mathrm{I_{CO}}$ given in $\mathrm{Jy~km~s^{-1}}$.The black dots correspond to measurements performed by (\textcolor{webgreen}{Huynh et al}, \citeyear{Huynh17}) for CO($1\rightarrow0$), (\textcolor{webgreen}{Calistro Rivera et al}, \citeyear{Calistro17}) in prep. for CO($3\rightarrow2$) and our observation for CO($4\rightarrow3$). The yellow and red dots corresponds to very well known SLEDS of Arp220 (\textcolor{webgreen}{Rosenberg et al}, \citeyear{rosenberg15}) and the GN20 (\textcolor{webgreen}{Carilli et al}, \citeyear{Carilli10}). The first three transition for Arp220 were measured by (\textcolor{webgreen}{Greve et al}, \citeyear{Greve09}).Both Arp220 and HFLS3 SLEDs were normalized to the CO(4-3) transition of ALESS122.1. and CO($7\rightarrow6$) transition of Arp220 respectively.}}
-\label{fig: 122SLED}
-\end{figure}
-
-\section{Imaging: Continuum, line and IR counterpart}
-
-We want to know how reliable are our detections, so, in order to do this we imaged ALESS070.1 and ALESS122.1. We will build three different images. The first image corresponds to the continuum$+$line at the same time, second one just the continuum and the third one just the line. In \textcolor{RoyalBlue}{Figure} \ref{fig: ALESS070Images} and \textcolor{RoyalBlue}{Figure} \ref{fig: ALESS122Images} we show this images for ALESS070.1 and ALESS112.1 respectively. First of all, the red dot in both cases correspond to the position of the source according to (\textcolor{webgreen}{Hodge et al}, \citeyear{Hodge13}) and also the place were the spectrum was taken as mentioned before because at least for these two sources it matches perfectly. The Continuum+Line image is generated without performing any primary beam correction and it clearly shows a detection $> 7\sigma$ for both sources. To generate the Continuum we just used those channels where there is absence of line, obtaining a $5\sigma$ and $7\sigma$ detection for ALESS070.1 and ALESS122.1 respectively. Also to make the line imaging, we only used those channels where there is line and also subtracted the continuum. In this case we obtained a $~7\sigma$ and $~14\sigma$ detection for each source respectively. This was all carried out using CASA (\textcolor{webgreen}{McMullin et al}, \citeyear{McMullin07}).\\        
-
-\begin{figure}[!ht]
-\centering
-  \subfloat{\includegraphics[width=7.5cm,height=5.9cm]{./Graficos/Capitulo_3/ALESS070_CL.png}} 
-  \subfloat{\includegraphics[width=7.5cm,height=5.9cm]{./Graficos/Capitulo_3/ALESS070_C.png}}\\
-  \subfloat{\includegraphics[width=7.5cm,height=5.9cm]{./Graficos/Capitulo_3/ALESS070_L.png}} 
-  \subfloat{\includegraphics[width=7.5cm,height=5.9cm]{./Graficos/Capitulo_3/ALESS070_Spitzer.png}}  
-\caption{\scriptsize{ALESS070.1 imaging. From left-to-right and top-to-bottom, Continuum+Line, Continuum, Line and Spitzer/IRAC images. The contours for the Continuum+Line correspond to (-2, 3, 4, 5, 7, ...)$\times$rms which is equal to $52.8\mu Jy$. For the Continuum, we show the (-3, -2, 2, 3, 4, 5)$\times$rms which is equal to $56.3\mu Jy$. For the Line CO(4-3) transition we show the (-5, -3, -2, 3, 5, 7)$\times$rms which is equal to $247\mu Jy$. For the SPITZER/IRAC counterpart (\textcolor{webgreen}{Lacy et al}, \citeyear{Spitzer05}) we over plot the Continuum+Line contours. The red dot shows the position where the spectrum was taken and also the coordinates where the source is centred. The beam size is shown in the left-corner. The color band stands for the flux intensity.}}
-\label{fig: ALESS070Images}
+  \subfloat{\includegraphics[width = 15cm, height = 8.5cm]{./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4_2.png}} 
+\caption{\scriptsize{Something!}}
+\label{fig:Stellar_Tracks_1}
 \end{figure}
 
 \begin{figure}[!ht]
 \centering
-  \subfloat{\includegraphics[width=7.5cm,height=5.9cm]{./Graficos/Capitulo_3/ALESS122_CL.png}} 
-  \subfloat{\includegraphics[width=7.5cm,height=5.9cm]{./Graficos/Capitulo_3/ALESS122_C.png}}\\
-  \subfloat{\includegraphics[width=7.5cm,height=5.9cm]{./Graficos/Capitulo_3/ALESS122_L.png}}
-  \subfloat{\includegraphics[width=7.5cm,height=5.9cm]{./Graficos/Capitulo_3/ALESS122_Spitzer.png}}  
-\caption{\scriptsize{ALESS122.1 imaging. From left-to-right and top-to-bottom, Continuum+Line, Continuum, Line and Spitzer/IRAC images. The contours for the Continuum+Line correspond to (-2, 3, 4, 5, 7, ...)$\times$rms which is equal to $57.3\mu Jy$. For the Continuum, we show the (-3, -2, 2, 3, 4, 5, 7)$\times$rms which is equal to $57.6\mu Jy$. For the Line CO(4-3) transition we show the (-5, -3, -2, 5, 7, 9, 11, 13, 14)$\times$rms which is equal to $306\mu Jy$. For the SPITZER/IRAC (\textcolor{webgreen}{Lacy et al}, \citeyear{Spitzer05}) counterpart we over plot the Continuum+Line contours. The red dot shows the position where the spectrum was taken and also the coordinates where the source is centred. The beam size is shown in the left-corner. The color band stands for the flux intensity.}}
-\label{fig: ALESS122Images}
+  \subfloat{\includegraphics[width = 15cm, height = 8.5cm]{./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_3_Extintion_cut.png}} 
+\caption{\scriptsize{Something!}}
+\label{fig:Isochrones_1}
 \end{figure}
 
-The right-bottom image in \textcolor{RoyalBlue}{Figure} \ref{fig: ALESS070Images} and \textcolor{RoyalBlue}{Figure} \ref{fig: ALESS122Images} correspond to the SPITZER/IRAC infra-red counterpart (\textcolor{webgreen}{Lacy et al}, \citeyear{Spitzer05}) just to double check that the source is real and matches the radio observation. This image was obtained combining the $3.6\mu \mathrm{m}$, $4.5\mu \mathrm{m}$, $5.8\mu \mathrm{m}$ and $8\mu \mathrm{m}$ channel of the IRAS camera in \textit{Spitzer} (\textcolor{webgreen}{Fazio et al}, \citeyear{Fazio04}). As expected from \textcolor{RoyalBlue}{Figure} \ref{fig: FitSample_1} in both cases, the line is clearly detected with a high signal-to-noise above the continuum emission which is directly related to the high value in the $\chi^2$ difference or the goodness of fit for the Gaussian The white contour here represent the emission line detection of CO(4-3) for (-5, -3, -2, 3, 5, 7)$\times$rms.\\
+\begin{figure}[!ht]
+\centering
+  \subfloat{\includegraphics[width = 15cm, height = 8.5cm]{./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN_Original.png}} 
+\caption{\scriptsize{Something!}}
+\label{fig:Isochrones_2}
+\end{figure}
 
-Next chapters will focus on the derived properties from molecule transitions, specially on the CO transition which will pave the road to all the future physical characterization of these sources applying all the concepts explained in \textcolor{RoyalBlue}{Chapter} \ref{ch:Theoretical}. We compute different parameters as the CO luminosity, the molecular mass, line luminosities, dynamical mass among others to properly characterize our final detections. 
+Besides this, if we want to obtain a reliable sample of star which belong to Sco-Cen, we need to include the extinction in each sub-region when computing the stellar tracks and isochrones. As can be seen from \autoref{fig:Isochrones_1}, the $60$-Myr gently touches the main-sequence of this association, thus, it seems legit to compute this isochrone with $\textnormal{A}_\textnormal{v} = 0$ because extinction will shift the isochrones upwards and we will lose stars lying on the main-sequence. However, in the case of the $5$-Myr isochrone, if we include extinction, then the isochrone will shift upwards including more stars that could be ruled out by our first selection method. Therefore, we proceed to compute the $5$-Myr isochrone including the extinction factor. Based on observation from \cauthor{1989A&A...216...44D}\citeyear{1989A&A...216...44D}, we were able to calculate the average, median and $90$-percentile extinction values for each sub-region. In the case of LCC a total number of 41 stars were used, while for UCL and US, 141 and 100 stars, respectively. In \autoref{fig:SCOCEN_Extinction}, the histograms for each sub-region are shown along with the average, median, and $90$-percentile extinction values. In the case of LCC and UCL, the values are always quite similar, but in the case of US, the values are significantly higher which may affect more drastically the isochrones and stellar tracks in comparison to the other two sub-regions. The values obtained for the average, are in agreement with values reported by \cauthor{2018MNRAS.tmp..210W}\citeyear{2018MNRAS.tmp..210W} and are well correlated with the distribution of the dust, as seen in the IRAS $100 \mu \textnormal{m}$ map \cauthor{1989A&A...216...44D}\citeyear{1989A&A...216...44D}. These values are $0.23$, $0.17$, $0.76$ for LCC, UCL, and US, repectively.\\     
 
-\clearpage
+\begin{figure}[!ht]
+\centering
+  \subfloat{\includegraphics[width = 15.5cm, height = 5cm]{./Graficos/Capitulo_3/5_Sco-Cen/Av_histograms.png}} 
+\caption{\scriptsize{Something!}}
+\label{fig:SCOCEN_Extinction}
+\end{figure}
+
+On top of that, the $5$-Myr isochrone was computed using the average extinction values reported above to perform the selection of stars in the color-magnitude diagrams once more. As can be seen in \autoref{fig:Isochrones_3}, the shape of the $5$-Myr isochrone when introducing the extinction factor changes dramatically, moving upwards, increasing the number of stars in our selection. The same happens to LCC and UCL but in a less proportion. However, it is worth noting that the isochrones do not cross each other around $\textnormal{M}_\textnormal{G} \sim 1.0~[\textnormal{mag}]$ as was the case shown in \autoref{fig:Isochrones_1}, allowing for brighter stars to be selected in our sample. If we center our view in the stellar tracks, it is evident from \autoref{fig:Stellar_Tracks_3} that there exists a displacement downwards. However, as stars above $2.1 \textnormal{M}_\odot$ are not a lot, and this does not change that much, we will not perform any cut in stellar mass but we will just cut in stellar age using the isochrones. The new cut and final sample using the isochrones in which the youngest isochrone is affected by extinction is shown in \autoref{fig:Isochrones_4}.\\ 
+
+\begin{figure}[!ht]
+\centering
+  \subfloat{\includegraphics[width = 15cm, height = 8.5cm]{./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4_Extintion_1.png}} 
+\caption{\scriptsize{Something!}}
+\label{fig:Stellar_Tracks_3}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+  \subfloat{\includegraphics[width = 15cm, height = 8.5cm]{./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN_2.png}} 
+\caption{\scriptsize{Something!}}
+\label{fig:Isochrones_3}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+  \subfloat{\includegraphics[width = 15cm, height = 8.5cm]{./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN.png}} 
+\caption{\scriptsize{Something!}}
+\label{fig:Isochrones_4}
+\end{figure}
+
+The main goal out of this process is to obtain a reliable sample which contain as much as possible stars which could be potential candidates to belong to the Sco-Cen association based on distance and dynamical properties derived from literature. As was stated before, this analysis was performed on a sample data using \textit{Gaia}-DR1, and the final sample is made of LCC $= 889$, UCL $= 644$, and US $= 705$ stars respectively, in which there is a slight increase in the number of stars per sub-region compared to the case in which no extinction is use as expected because the region between the isochrones is now larger.
+
+%============================================================================================================================================================
+
+\section{Light Curves}
+

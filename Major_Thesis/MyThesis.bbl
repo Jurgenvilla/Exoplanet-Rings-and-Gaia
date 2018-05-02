@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -20,6 +20,19 @@ R.~P. {Butler}, J.~T. {Wright}, G.~W. {Marcy}, D.~A. {Fischer}, S.~S. {Vogt},
 \newblock {Catalog of Nearby Exoplanets}.
 \newblock \emph{ApJ}, 646:\penalty0 505--522, jul 2006.
 \newblock \doi{10.1086/504701}.
+
+\bibitem[{Butters} et~al.(2010){Butters}, {West}, {Anderson}, {Collier
+  Cameron}, {Clarkson}, {Enoch}, {Haswell}, {Hellier}, {Horne}, {Joshi},
+  {Kane}, {Lister}, {Maxted}, {Parley}, {Pollacco}, {Smalley}, {Street},
+  {Todd}, {Wheatley}, and {Wilson}]{2010A&A...520L..10B}
+O.~W. {Butters}, R.~G. {West}, D.~R. {Anderson}, A.~{Collier Cameron}, W.~I.
+  {Clarkson}, B.~{Enoch}, C.~A. {Haswell}, C.~{Hellier}, K.~{Horne},
+  Y.~{Joshi}, S.~R. {Kane}, T.~A. {Lister}, P.~F.~L. {Maxted}, N.~{Parley},
+  D.~{Pollacco}, B.~{Smalley}, R.~A. {Street}, I.~{Todd}, P.~J. {Wheatley}, and
+  D.~M. {Wilson}.
+\newblock {The first WASP public data release}.
+\newblock \emph{A\&A}, 520:\penalty0 L10, sep 2010.
+\newblock \doi{10.1051/0004-6361/201015655}.
 
 \bibitem[{Canup}(2010)]{2010Natur.468..943C}
 R.~M. {Canup}.
@@ -65,6 +78,14 @@ S.~{Charnoz}, A.~{Morbidelli}, L.~{Dones}, and J.~{Salmon}.
 \newblock \emph{ICARUS}, 199:\penalty0 413--428, feb 2009{\natexlab{b}}.
 \newblock \doi{10.1016/j.icarus.2008.10.019}.
 
+\bibitem[{Choi} et~al.(2016){Choi}, {Dotter}, {Conroy}, {Cantiello}, {Paxton},
+  and {Johnson}]{2016ApJ...823..102C}
+J.~{Choi}, A.~{Dotter}, C.~{Conroy}, M.~{Cantiello}, B.~{Paxton}, and B.~D.
+  {Johnson}.
+\newblock {Mesa Isochrones and Stellar Tracks (MIST). I. Solar-scaled Models}.
+\newblock \emph{ApJ}, 823:\penalty0 102, jun 2016.
+\newblock \doi{10.3847/0004-637X/823/2/102}.
+
 \bibitem[{Colwell}(1994)]{1994P&SS...42.1139C}
 J.~E. {Colwell}.
 \newblock {The disruption of planetary satellites and the creation of planetary
@@ -80,6 +101,28 @@ A.~{Cumming}, R.~P. {Butler}, G.~W. {Marcy}, S.~S. {Vogt}, J.~T. {Wright}, and
   Orbital Period Distribution of Extrasolar Planets}.
 \newblock \emph{PASP}, 120:\penalty0 531, may 2008.
 \newblock \doi{10.1086/588487}.
+
+\bibitem[{de Geus} et~al.(1989){de Geus}, {de Zeeuw}, and
+  {Lub}]{1989A&A...216...44D}
+E.~J. {de Geus}, P.~T. {de Zeeuw}, and J.~{Lub}.
+\newblock {Physical parameters of stars in the Scorpio-Centaurus OB
+  association}.
+\newblock \emph{A\&A}, 216:\penalty0 44--61, jun 1989.
+
+\bibitem[{de Zeeuw} et~al.(1999){de Zeeuw}, {Hoogerwerf}, {de Bruijne},
+  {Brown}, and {Blaauw}]{1999AJ....117..354D}
+P.~T. {de Zeeuw}, R.~{Hoogerwerf}, J.~H.~J. {de Bruijne}, A.~G.~A. {Brown}, and
+  A.~{Blaauw}.
+\newblock {A HIPPARCOS Census of the Nearby OB Associations}.
+\newblock \emph{AJ}, 117:\penalty0 354--399, jan 1999.
+\newblock \doi{10.1086/300682}.
+
+\bibitem[{Dotter}(2016)]{2016ApJS..222....8D}
+A.~{Dotter}.
+\newblock {MESA Isochrones and Stellar Tracks (MIST) 0: Methods for the
+  Construction of Stellar Isochrones}.
+\newblock \emph{ApJS}, 222:\penalty0 8, jan 2016.
+\newblock \doi{10.3847/0067-0049/222/1/8}.
 
 \bibitem[{Gaia Collaboration} et~al.(2016){Gaia Collaboration}, {Prusti}, {de
   Bruijne}, {Brown}, {Vallenari}, {Babusiaux}, {Bailer-Jones}, {Bastian},
@@ -151,6 +194,12 @@ H.~P. {Osborn}, J.~E. {Rodriguez}, M.~A. {Kenworthy}, G.~M. {Kennedy}, E.~E.
 \newblock \emph{MNRAS}, 471:\penalty0 740--749, oct 2017.
 \newblock \doi{10.1093/mnras/stx1249}.
 
+\bibitem[{Pecaut} and {Mamajek}(2016)]{2016MNRAS.461..794P}
+M.~J. {Pecaut} and E.~E. {Mamajek}.
+\newblock {The star formation history and accretion-disc fraction among the
+  K-type members of the Scorpius-Centaurus OB association}.
+\newblock \emph{MNRAS}, 461:\penalty0 794--815, sep 2016.
+
 \bibitem[{Quillen} and {Trilling}(1998)]{1998ApJ...508..707Q}
 A.~C. {Quillen} and D.~E. {Trilling}.
 \newblock {Do Proto-jovian Planets Drive Outflows?}
@@ -163,6 +212,13 @@ S.~{Rieder} and M.~A. {Kenworthy}.
 \newblock \emph{A\&A}, 596:\penalty0 A9, nov 2016.
 \newblock \doi{10.1051/0004-6361/201629567}.
 
+\bibitem[{Rizzuto} et~al.(2012){Rizzuto}, {Ireland}, and
+  {Robertson}]{2012yCat..74163108R}
+A.~C. {Rizzuto}, M.~J. {Ireland}, and J.~G. {Robertson}.
+\newblock {VizieR Online Data Catalog: Membership of Sco OB2 moving group
+  (Rizzuto+, 2011)}.
+\newblock \emph{VizieR Online Data Catalog}, 741, apr 2012.
+
 \bibitem[{Salpeter}(1955)]{1955ApJ...121..161S}
 E.~E. {Salpeter}.
 \newblock {The Luminosity Function and Stellar Evolution.}
@@ -174,6 +230,13 @@ M.~S. {Tiscareno}.
 \newblock \emph{{Planetary Rings}}, page 309.
 \newblock 2013.
 \newblock \doi{10.1007/978-94-007-5606-9_7}.
+
+\bibitem[{Wright} and {Mamajek}(2018)]{2018MNRAS.tmp..210W}
+N.~J. {Wright} and E.~E. {Mamajek}.
+\newblock {The Kinematics of the Scorpius-Centaurus OB Association from Gaia
+  DR1}.
+\newblock \emph{MNRAS}, jan 2018.
+\newblock \doi{10.1093/mnras/sty207}.
 
 \bibitem[{Zucker} and {Mazeh}(2002)]{2002ApJ...568L.113Z}
 S.~{Zucker} and T.~{Mazeh}.

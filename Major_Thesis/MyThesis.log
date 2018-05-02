@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.10)  13 MAR 2018 21:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.10)  30 APR 2018 16:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1427,16 +1427,10 @@ Writing index file MyThesis.idx
 (./MyThesis.aux (./FrontBackmatter/Titlepage.aux)
 (./FrontBackmatter/Titleback.aux) (./FrontBackmatter/Abstract.aux)
 (./FrontBackmatter/Acknowledgments.aux) (./FrontBackmatter/Contents.aux)
-(./Capitulos/Chapter01.aux) (./Capitulos/Chapter02.aux
-
-LaTeX Warning: Label `fig:Mass_Nielsen' multiply defined.
-
-) (./Capitulos/Chapter03.aux) (./Capitulos/Chapter04.aux)
-(./Capitulos/Chapter05.aux
-
-LaTeX Warning: Label `ch: Summary' multiply defined.
-
-) (./FrontBackmatter/Bibliography.aux) (./Capitulos/Appendix.aux))
+(./Capitulos/Chapter01.aux) (./Capitulos/Chapter02.aux)
+(./Capitulos/Chapter03.aux) (./Capitulos/Chapter04.aux)
+(./Capitulos/Chapter05.aux) (./FrontBackmatter/Bibliography.aux)
+(./Capitulos/Appendix.aux))
 \openout1 = `MyThesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 285.
@@ -1566,7 +1560,7 @@ ABD: EveryShipout initializing macros
 \openout2 = `FrontBackmatter/Titlepage.aux'.
 
  (./FrontBackmatter/Titlepage.tex
-<gfx/EXO_3.jpg, id=159, 691.83469pt x 363.60844pt>
+<gfx/EXO_3.jpg, id=155, 691.83469pt x 363.60844pt>
 File: gfx/EXO_3.jpg Graphic file (type jpg)
  <use gfx/EXO_3.jpg>
 Package pdftex.def Info: gfx/EXO_3.jpg used on input line 35.
@@ -1574,7 +1568,7 @@ Package pdftex.def Info: gfx/EXO_3.jpg used on input line 35.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 39.
 
-<gfx/Logo_Leiden.png, id=160, 202.23555pt x 105.2733pt>
+<gfx/Logo_Leiden.png, id=156, 202.23555pt x 105.2733pt>
 File: gfx/Logo_Leiden.png Graphic file (type png)
 
 <use gfx/Logo_Leiden.png>
@@ -2923,6 +2917,9 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 43
 
  [8
 
+] [9] [10
+
+
 ])
 \openout2 = `Capitulos/Chapter01.aux'.
 
@@ -2963,8 +2960,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
  []
 
 ) [1
-
-
 
 
 
@@ -3221,7 +3216,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--266
  []
 
 
-<./Graficos/Capitulo_2/Illustrations/Prob_1.png, id=450, 539.01375pt x 559.0887
+<./Graficos/Capitulo_2/Illustrations/Prob_1.png, id=492, 539.01375pt x 559.0887
 5pt>
 File: ./Graficos/Capitulo_2/Illustrations/Prob_1.png Graphic file (type png)
  <use ./Graficos/Capitulo_2/Illustrations/Prob_1.png>
@@ -3234,7 +3229,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--275
  []
 
 
-<./Graficos/Capitulo_2/Illustrations/Prob_2.png, id=452, 637.63219pt x 197.9896
+<./Graficos/Capitulo_2/Illustrations/Prob_2.png, id=494, 637.63219pt x 197.9896
 9pt>
 File: ./Graficos/Capitulo_2/Illustrations/Prob_2.png Graphic file (type png)
  <use ./Graficos/Capitulo_2/Illustrations/Prob_2.png>
@@ -3247,7 +3242,7 @@ Overfull \hbox (53.70065pt too wide) in paragraph at lines 283--284
  []
 
 [11 <./Graficos/Capitulo_2/Illustrations/Prob_1.png>]
-<./Graficos/Capitulo_2/Illustrations/Prob_4.png, id=462, 458.46281pt x 226.5965
+<./Graficos/Capitulo_2/Illustrations/Prob_4.png, id=503, 458.46281pt x 226.5965
 6pt>
 File: ./Graficos/Capitulo_2/Illustrations/Prob_4.png Graphic file (type png)
  <use ./Graficos/Capitulo_2/Illustrations/Prob_4.png>
@@ -3271,137 +3266,524 @@ Underfull \hbox (badness 10000) in paragraph at lines 313--314
  []
 
 [13]
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
+
+ []
+
+
+! Package amsmath Error: Erroneous nesting of equation structures;
+(amsmath)                trying to recover with `aligned'.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.340  \end{align*}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
+
+ []
+
+
 <./Graficos/Capitulo_2/2_Exop_distributions/Period_mass_distribution_2.png, id=
-510, 528.0528pt x 384.9582pt>
+559, 528.0528pt x 384.9582pt>
 File: ./Graficos/Capitulo_2/2_Exop_distributions/Period_mass_distribution_2.png
  Graphic file (type png)
 
 <use ./Graficos/Capitulo_2/2_Exop_distributions/Period_mass_distribution_2.png>
 Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Period_mass
-_distribution_2.png used on input line 331.
+_distribution_2.png used on input line 349.
 (pdftex.def)             Requested size: 341.4415pt x 256.08209pt.
 
 <./Graficos/Capitulo_2/2_Exop_distributions/Period_major_distribution_2.png, id
-=511, 528.0528pt x 383.031pt>
+=560, 528.0528pt x 383.031pt>
 File: ./Graficos/Capitulo_2/2_Exop_distributions/Period_major_distribution_2.pn
 g Graphic file (type png)
 
 <use ./Graficos/Capitulo_2/2_Exop_distributions/Period_major_distribution_2.png
 >
 Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Period_majo
-r_distribution_2.png used on input line 338.
+r_distribution_2.png used on input line 356.
 (pdftex.def)             Requested size: 341.4415pt x 256.09174pt.
 
 <./Graficos/Capitulo_2/2_Exop_distributions/Mass_major_distribution_2.png, id=5
-12, 510.4671pt x 387.849pt>
+61, 510.4671pt x 387.849pt>
 File: ./Graficos/Capitulo_2/2_Exop_distributions/Mass_major_distribution_2.png 
 Graphic file (type png)
 
 <use ./Graficos/Capitulo_2/2_Exop_distributions/Mass_major_distribution_2.png>
 Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Mass_major_
-distribution_2.png used on input line 345.
+distribution_2.png used on input line 363.
 (pdftex.def)             Requested size: 341.45036pt x 256.0758pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
+
+ []
+
+[14] [15 <./Graficos/Capitulo_2/2_Exop_distributions/Period_mass_distribution_2
+.png> <./Graficos/Capitulo_2/2_Exop_distributions/Period_major_distribution_2.p
+ng>]
 <./Graficos/Capitulo_2/2_Exop_distributions/Mass_distribution_Nielsen.png, id=5
-13, 955.4094pt x 712.3413pt>
+98, 955.4094pt x 712.3413pt>
 File: ./Graficos/Capitulo_2/2_Exop_distributions/Mass_distribution_Nielsen.png 
 Graphic file (type png)
 
 <use ./Graficos/Capitulo_2/2_Exop_distributions/Mass_distribution_Nielsen.png>
 Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Mass_distri
-bution_Nielsen.png used on input line 352.
+bution_Nielsen.png used on input line 372.
 (pdftex.def)             Requested size: 955.40706pt x 712.33955pt.
 
-Overfull \hbox (11.02748pt too wide) in paragraph at lines 352--353
+Overfull \hbox (11.02748pt too wide) in paragraph at lines 372--373
  [][] 
  []
 
 
 <./Graficos/Capitulo_2/2_Exop_distributions/Period_distribution_Nielsen.png, id
-=514, 920.4789pt x 656.2116pt>
+=599, 920.4789pt x 656.2116pt>
 File: ./Graficos/Capitulo_2/2_Exop_distributions/Period_distribution_Nielsen.pn
 g Graphic file (type png)
 
 <use ./Graficos/Capitulo_2/2_Exop_distributions/Period_distribution_Nielsen.png
 >
 Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Period_dist
-ribution_Nielsen.png used on input line 359.
+ribution_Nielsen.png used on input line 379.
 (pdftex.def)             Requested size: 920.47665pt x 656.20999pt.
 
-Overfull \hbox (11.03127pt too wide) in paragraph at lines 359--360
+Overfull \hbox (11.03127pt too wide) in paragraph at lines 379--380
  [][] 
  []
 
 
-<./Graficos/Capitulo_2/2_Exop_distributions/Period_mass_distribution.png, id=51
-5, 528.0528pt x 384.9582pt>
+<./Graficos/Capitulo_2/2_Exop_distributions/Period_mass_distribution.png, id=60
+0, 528.0528pt x 384.9582pt>
 File: ./Graficos/Capitulo_2/2_Exop_distributions/Period_mass_distribution.png G
 raphic file (type png)
 
 <use ./Graficos/Capitulo_2/2_Exop_distributions/Period_mass_distribution.png>
 Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Period_mass
-_distribution.png used on input line 366.
+_distribution.png used on input line 386.
 (pdftex.def)             Requested size: 341.4415pt x 256.08209pt.
 
-<./Graficos/Capitulo_2/2_Exop_distributions/Period_major_distribution.png, id=5
-16, 528.0528pt x 383.031pt>
+<./Graficos/Capitulo_2/2_Exop_distributions/Period_major_distribution.png, id=6
+01, 528.0528pt x 383.031pt>
 File: ./Graficos/Capitulo_2/2_Exop_distributions/Period_major_distribution.png 
 Graphic file (type png)
 
 <use ./Graficos/Capitulo_2/2_Exop_distributions/Period_major_distribution.png>
 Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Period_majo
-r_distribution.png used on input line 373.
+r_distribution.png used on input line 393.
 (pdftex.def)             Requested size: 341.4415pt x 256.09174pt.
 
-<./Graficos/Capitulo_2/2_Exop_distributions/Mass_major_distribution.png, id=517
+<./Graficos/Capitulo_2/2_Exop_distributions/Mass_major_distribution.png, id=602
 , 510.2262pt x 383.031pt>
 File: ./Graficos/Capitulo_2/2_Exop_distributions/Mass_major_distribution.png Gr
 aphic file (type png)
 
 <use ./Graficos/Capitulo_2/2_Exop_distributions/Mass_major_distribution.png>
 Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Mass_major_
-distribution.png used on input line 380.
+distribution.png used on input line 400.
 (pdftex.def)             Requested size: 341.43715pt x 256.09174pt.
-)
-[14 <./Graficos/Capitulo_2/2_Exop_distributions/Period_mass_distribution_2.png>
-] [15 <./Graficos/Capitulo_2/2_Exop_distributions/Period_major_distribution_2.p
-ng> <./Graficos/Capitulo_2/2_Exop_distributions/Mass_major_distribution_2.png>]
-[16 <./Graficos/Capitulo_2/2_Exop_distributions/Mass_distribution_Nielsen.png>]
-[17 <./Graficos/Capitulo_2/2_Exop_distributions/Period_distribution_Nielsen.png
->] [18 <./Graficos/Capitulo_2/2_Exop_distributions/Period_mass_distribution.png
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
+
+ []
+
+
+<./Graficos/Capitulo_2/2_Exop_distributions/Salpeter.png, id=607, 962.3955pt x 
+710.8959pt>
+File: ./Graficos/Capitulo_2/2_Exop_distributions/Salpeter.png Graphic file (typ
+e png)
+ <use ./Graficos/Capitulo_2/2_Exop_distributions/Salpeter.png>
+Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Salpeter.pn
+g used on input line 409.
+(pdftex.def)             Requested size: 962.39316pt x 710.89417pt.
+
+Overfull \hbox (11.0221pt too wide) in paragraph at lines 409--410
+ [][] 
+ []
+
+
+<./Graficos/Capitulo_2/2_Exop_distributions/Kroupa.png, id=608, 969.3816pt x 71
+0.8959pt>
+File: ./Graficos/Capitulo_2/2_Exop_distributions/Kroupa.png Graphic file (type 
+png)
+ <use ./Graficos/Capitulo_2/2_Exop_distributions/Kroupa.png>
+Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Kroupa.png 
+used on input line 416.
+(pdftex.def)             Requested size: 969.37924pt x 710.89417pt.
+
+Overfull \hbox (11.0221pt too wide) in paragraph at lines 416--417
+ [][] 
+ []
+
+[16 <./Graficos/Capitulo_2/2_Exop_distributions/Mass_major_distribution_2.png>]
+[17 <./Graficos/Capitulo_2/2_Exop_distributions/Mass_distribution_Nielsen.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
+
+ []
+
+[18 <./Graficos/Capitulo_2/2_Exop_distributions/Period_distribution_Nielsen.png
+>] [19 <./Graficos/Capitulo_2/2_Exop_distributions/Period_mass_distribution.png
 > <./Graficos/Capitulo_2/2_Exop_distributions/Period_major_distribution.png>]
-[19 <./Graficos/Capitulo_2/2_Exop_distributions/Mass_major_distribution.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
+
+ []
+
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 435.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 435.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 435.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 435.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 435.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 435.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 435.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 435.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 435.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 435.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 435.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 435.
+[20 <./Graficos/Capitulo_2/2_Exop_distributions/Mass_major_distribution.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 438--440
+
+ []
+
+
+<./Graficos/Capitulo_2/2_Exop_distributions/Linear_Interpolation.png, id=656, 5
+31.4254pt x 383.031pt>
+File: ./Graficos/Capitulo_2/2_Exop_distributions/Linear_Interpolation.png Graph
+ic file (type png)
+
+<use ./Graficos/Capitulo_2/2_Exop_distributions/Linear_Interpolation.png>
+Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Linear_Inte
+rpolation.png used on input line 443.
+(pdftex.def)             Requested size: 341.44095pt x 256.09174pt.
+
+[21 <./Graficos/Capitulo_2/2_Exop_distributions/Salpeter.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
+
+ []
+
+
+<./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen.png, id=6
+66, 537.9297pt x 383.031pt>
+File: ./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen.png 
+Graphic file (type png)
+
+<use ./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen.png>
+Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo
+_KroupaNielsen.png used on input line 452.
+(pdftex.def)             Requested size: 284.53502pt x 199.17142pt.
+
+<./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_1.png, id
+=667, 522.9939pt x 383.031pt>
+File: ./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_1.pn
+g Graphic file (type png)
+
+<use ./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_1.png
+>
+Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo
+_KroupaNielsen_1.png used on input line 454.
+(pdftex.def)             Requested size: 284.53523pt x 199.17142pt.
+ [22 <./Graficos/Capitulo_2/2_Exop_distributions/Kroupa.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
+
+ []
+
+
+<./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_2.png, id
+=681, 483.0045pt x 383.031pt>
+File: ./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_2.pn
+g Graphic file (type png)
+
+<use ./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_2.png
+>
+Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo
+_KroupaNielsen_2.png used on input line 463.
+(pdftex.def)             Requested size: 284.52797pt x 199.17142pt.
+
+<./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_3.png, id
+=682, 467.346pt x 383.031pt>
+File: ./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_3.pn
+g Graphic file (type png)
+
+<use ./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_3.png
+>
+Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo
+_KroupaNielsen_3.png used on input line 465.
+(pdftex.def)             Requested size: 284.52441pt x 199.17142pt.
+
+<./Graficos/Capitulo_2/2_Exop_distributions/Analytic_Kroupa_Nielsen.png, id=683
+, 475.7775pt x 383.031pt>
+File: ./Graficos/Capitulo_2/2_Exop_distributions/Analytic_Kroupa_Nielsen.png Gr
+aphic file (type png)
+
+<use ./Graficos/Capitulo_2/2_Exop_distributions/Analytic_Kroupa_Nielsen.png>
+Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Analytic_Kr
+oupa_Nielsen.png used on input line 472.
+(pdftex.def)             Requested size: 284.53944pt x 199.17142pt.
+
+<./Graficos/Capitulo_2/2_Exop_distributions/Analytic_Kroupa_Nielsen_1.png, id=6
+84, 467.346pt x 383.031pt>
+File: ./Graficos/Capitulo_2/2_Exop_distributions/Analytic_Kroupa_Nielsen_1.png 
+Graphic file (type png)
+
+<use ./Graficos/Capitulo_2/2_Exop_distributions/Analytic_Kroupa_Nielsen_1.png>
+Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Analytic_Kr
+oupa_Nielsen_1.png used on input line 474.
+(pdftex.def)             Requested size: 284.52441pt x 199.17142pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
+
+ []
+
+[23 <./Graficos/Capitulo_2/2_Exop_distributions/Linear_Interpolation.png>]
+<./Graficos/Capitulo_2/2_Exop_distributions/Analytic_rings_Kroupa_Nielsen.png, 
+id=695, 523.4757pt x 383.031pt>
+File: ./Graficos/Capitulo_2/2_Exop_distributions/Analytic_rings_Kroupa_Nielsen.
+png Graphic file (type png)
+
+<use ./Graficos/Capitulo_2/2_Exop_distributions/Analytic_rings_Kroupa_Nielsen.p
+ng>
+Package pdftex.def Info: ./Graficos/Capitulo_2/2_Exop_distributions/Analytic_ri
+ngs_Kroupa_Nielsen.png used on input line 483.
+(pdftex.def)             Requested size: 341.42934pt x 256.09174pt.
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 488.
+ (/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.30756pt on input line 488.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fvm' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) [24 <./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen.png
+> <./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_1.png>]
+ [25 <./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_2.pn
+g> <./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_3.png>
+] [26 <./Graficos/Capitulo_2/2_Exop_distributions/Analytic_Kroupa_Nielsen.png> 
+<./Graficos/Capitulo_2/2_Exop_distributions/Analytic_Kroupa_Nielsen_1.png>] [27
+ <./Graficos/Capitulo_2/2_Exop_distributions/Analytic_rings_Kroupa_Nielsen.png>
+]
 \openout2 = `Capitulos/Chapter03.aux'.
 
 
-(./Capitulos/Chapter03.tex [20
+(./Capitulos/Chapter03.tex [28
 
 
 
 
 ]
 chapter 3.
-) [21]
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+[29]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 19.
+
+
+<./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_1.png, id=775, 965.5272pt x 336
+.2964pt>
+File: ./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_1.png Graphic file (type p
+ng)
+ <use ./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_1.png>
+Package pdftex.def Info: ./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_1.png u
+sed on input line 34.
+(pdftex.def)             Requested size: 455.24165pt x 156.49423pt.
+
+<./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_2.png, id=776, 965.5272pt x 336
+.2964pt>
+File: ./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_2.png Graphic file (type p
+ng)
+ <use ./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_2.png>
+Package pdftex.def Info: ./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_2.png u
+sed on input line 36.
+(pdftex.def)             Requested size: 455.24165pt x 156.49423pt.
+
+<./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_3.png, id=777, 965.5272pt x 336
+.2964pt>
+File: ./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_3.png Graphic file (type p
+ng)
+ <use ./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_3.png>
+Package pdftex.def Info: ./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_3.png u
+sed on input line 38.
+(pdftex.def)             Requested size: 455.24165pt x 156.49423pt.
+
+Overfull \hbox (27.50829pt too wide) in paragraph at lines 34--39
+ [][] 
+ []
+
+
+Overfull \hbox (27.50829pt too wide) in paragraph at lines 34--39
+ [][] 
+ []
+
+
+Overfull \hbox (27.50829pt too wide) in paragraph at lines 34--39
+ [][] 
+ []
+
+
+<./Graficos/Capitulo_3/5_Sco-Cen/Sco_Cen_Projection_flipped.png, id=778, 590.44
+59pt x 317.988pt>
+File: ./Graficos/Capitulo_3/5_Sco-Cen/Sco_Cen_Projection_flipped.png Graphic fi
+le (type png)
+
+<use ./Graficos/Capitulo_3/5_Sco-Cen/Sco_Cen_Projection_flipped.png>
+Package pdftex.def Info: ./Graficos/Capitulo_3/5_Sco-Cen/Sco_Cen_Projection_fli
+pped.png used on input line 45.
+(pdftex.def)             Requested size: 341.43178pt x 199.16899pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+[30] [31 <./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_1.png> <./Graficos/Cap
+itulo_3/5_Sco-Cen/Hist_Extintion_2.png> <./Graficos/Capitulo_3/5_Sco-Cen/Hist_E
+xtintion_3.png>]
+<./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4_2.png, id=806, 959.0229pt x 
+496.7358pt>
+File: ./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4_2.png Graphic file (typ
+e png)
+ <use ./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4_2.png>
+Package pdftex.def Info: ./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4_2.pn
+g used on input line 61.
+(pdftex.def)             Requested size: 426.80043pt x 241.84128pt.
+
+<./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_3_Extintion_cut.png, id=807, 9
+59.0229pt x 496.7358pt>
+File: ./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_3_Extintion_cut.png Graph
+ic file (type png)
+
+<use ./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_3_Extintion_cut.png>
+Package pdftex.def Info: ./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_3_Exti
+ntion_cut.png used on input line 68.
+(pdftex.def)             Requested size: 426.80043pt x 241.84128pt.
+
+<./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN_Original.png, id=808, 959.
+0229pt x 496.7358pt>
+File: ./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN_Original.png Graphic 
+file (type png)
+
+<use ./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN_Original.png>
+Package pdftex.def Info: ./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN_Or
+iginal.png used on input line 75.
+(pdftex.def)             Requested size: 426.80043pt x 241.84128pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+[32 <./Graficos/Capitulo_3/5_Sco-Cen/Sco_Cen_Projection_flipped.png> <./Grafico
+s/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4_2.png>] [33 <./Graficos/Capitulo_3/5_S
+co-Cen/Mag_Col_diagram_3_Extintion_cut.png> <./Graficos/Capitulo_3/5_Sco-Cen/fi
+nal_Sample_SCOCEN_Original.png>]
+<./Graficos/Capitulo_3/5_Sco-Cen/Av_histograms.png, id=836, 1182.0963pt x 390.4
+989pt>
+File: ./Graficos/Capitulo_3/5_Sco-Cen/Av_histograms.png Graphic file (type png)
+
+ <use ./Graficos/Capitulo_3/5_Sco-Cen/Av_histograms.png>
+Package pdftex.def Info: ./Graficos/Capitulo_3/5_Sco-Cen/Av_histograms.png used
+ on input line 84.
+(pdftex.def)             Requested size: 441.01231pt x 142.26575pt.
+
+Overfull \hbox (11.01231pt too wide) in paragraph at lines 84--85
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+<./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4_Extintion_1.png, id=841, 959
+.0229pt x 496.7358pt>
+File: ./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4_Extintion_1.png Graphic
+ file (type png)
+
+<use ./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4_Extintion_1.png>
+Package pdftex.def Info: ./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4_Exti
+ntion_1.png used on input line 93.
+(pdftex.def)             Requested size: 426.80043pt x 241.84128pt.
+
+<./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN_2.png, id=842, 959.0229pt 
+x 496.7358pt>
+File: ./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN_2.png Graphic file (t
+ype png)
+ <use ./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN_2.png>
+Package pdftex.def Info: ./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN_2.
+png used on input line 100.
+(pdftex.def)             Requested size: 426.80043pt x 241.84128pt.
+
+<./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN.png, id=843, 959.0229pt x 
+496.7358pt>
+File: ./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN.png Graphic file (typ
+e png)
+ <use ./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN.png>
+Package pdftex.def Info: ./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN.pn
+g used on input line 107.
+(pdftex.def)             Requested size: 426.80043pt x 241.84128pt.
+)
+[34 <./Graficos/Capitulo_3/5_Sco-Cen/Av_histograms.png>] [35 <./Graficos/Capitu
+lo_3/5_Sco-Cen/Mag_Col_diagram_4_Extintion_1.png> <./Graficos/Capitulo_3/5_Sco-
+Cen/final_Sample_SCOCEN_2.png>] [36 <./Graficos/Capitulo_3/5_Sco-Cen/final_Samp
+le_SCOCEN.png>]
 \openout2 = `Capitulos/Chapter04.aux'.
 
- (./Capitulos/Chapter04.tex [22
+ (./Capitulos/Chapter04.tex
+chapter 4.
+) [37
 
 
 
 
 ]
-chapter 4.
-) [23]
 \openout2 = `Capitulos/Chapter05.aux'.
 
- (./Capitulos/Chapter05.tex [24
+ (./Capitulos/Chapter05.tex [38
 
 
 
 
 ]
 chapter 5.
-) [25] [26
+) [39] [40
 
 
 
@@ -3412,13 +3794,17 @@ chapter 5.
 \tf@brf=\write10
 \openout10 = `MyThesis.brf'.
 
- [27
+ [41
 
 
 
 
 
-])) [28]
+] [42])) [43] [44
+
+
+
+]
 \openout2 = `Capitulos/Appendix.aux'.
 
  (./Capitulos/Appendix.tex
@@ -3430,34 +3816,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 12.
-(/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 8.50006pt on input line 12.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `fvm' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [29
+[45
 
 
 
+]
+<./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4.png, id=979, 959.0229pt x 49
+6.7358pt>
+File: ./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4.png Graphic file (type 
+png)
+ <use ./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4.png>
+Package pdftex.def Info: ./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4.png 
+used on input line 78.
+(pdftex.def)             Requested size: 426.80043pt x 241.84128pt.
 
-
-
-]) [30]
+<./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_3.png, id=980, 959.0229pt x 49
+6.7358pt>
+File: ./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_3.png Graphic file (type 
+png)
+ <use ./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_3.png>
+Package pdftex.def Info: ./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_3.png 
+used on input line 85.
+(pdftex.def)             Requested size: 426.80043pt x 241.84128pt.
+) [46]
+[47 <./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4.png> <./Graficos/Capitul
+o_3/5_Sco-Cen/Mag_Col_diagram_3.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 361.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 361.
+ (./MyThesis.aux
+(./FrontBackmatter/Titlepage.aux) (./FrontBackmatter/Titleback.aux)
+(./FrontBackmatter/Abstract.aux) (./FrontBackmatter/Acknowledgments.aux)
+(./FrontBackmatter/Contents.aux) (./Capitulos/Chapter01.aux)
+(./Capitulos/Chapter02.aux) (./Capitulos/Chapter03.aux)
+(./Capitulos/Chapter04.aux) (./Capitulos/Chapter05.aux)
+(./FrontBackmatter/Bibliography.aux) (./Capitulos/Appendix.aux)
 
-(./MyThesis.aux (./FrontBackmatter/Titlepage.aux)
-(./FrontBackmatter/Titleback.aux) (./FrontBackmatter/Abstract.aux)
-(./FrontBackmatter/Acknowledgments.aux) (./FrontBackmatter/Contents.aux)
-(./Capitulos/Chapter01.aux) (./Capitulos/Chapter02.aux)
-(./Capitulos/Chapter03.aux) (./Capitulos/Chapter04.aux)
-(./Capitulos/Chapter05.aux) (./FrontBackmatter/Bibliography.aux)
-(./Capitulos/Appendix.aux))
+Package mparhack Warning: Marginpars may have changed.
+(mparhack)                Rerun to get them right.
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 361.
 
 
@@ -3649,34 +4048,54 @@ Capitulos/Chapter02.tex
 ./Graficos/Capitulo_2/2_Exop_distributions/Period_mass_distribution.png
 ./Graficos/Capitulo_2/2_Exop_distributions/Period_major_distribution.png
 ./Graficos/Capitulo_2/2_Exop_distributions/Mass_major_distribution.png
+./Graficos/Capitulo_2/2_Exop_distributions/Salpeter.png
+./Graficos/Capitulo_2/2_Exop_distributions/Kroupa.png
+./Graficos/Capitulo_2/2_Exop_distributions/Linear_Interpolation.png
+./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen.png
+./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_1.png
+./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_2.png
+./Graficos/Capitulo_2/2_Exop_distributions/Monte-Carlo_KroupaNielsen_3.png
+./Graficos/Capitulo_2/2_Exop_distributions/Analytic_Kroupa_Nielsen.png
+./Graficos/Capitulo_2/2_Exop_distributions/Analytic_Kroupa_Nielsen_1.png
+./Graficos/Capitulo_2/2_Exop_distributions/Analytic_rings_Kroupa_Nielsen.png
+   t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
 Capitulos/Chapter03.tex
+./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_1.png
+./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_2.png
+./Graficos/Capitulo_3/5_Sco-Cen/Hist_Extintion_3.png
+./Graficos/Capitulo_3/5_Sco-Cen/Sco_Cen_Projection_flipped.png
+./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4_2.png
+./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_3_Extintion_cut.png
+./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN_Original.png
+./Graficos/Capitulo_3/5_Sco-Cen/Av_histograms.png
+./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4_Extintion_1.png
+./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN_2.png
+./Graficos/Capitulo_3/5_Sco-Cen/final_Sample_SCOCEN.png
 Capitulos/Chapter04.tex
 Capitulos/Chapter05.tex
 FrontBackmatter/Bibliography.tex
 MyThesis.bbl
 Capitulos/Appendix.tex
 lstlang1.sty    2015/06/04 1.6 listings language file
-   t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
+./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_4.png
+./Graficos/Capitulo_3/5_Sco-Cen/Mag_Col_diagram_3.png
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 361.
 Package rerunfilecheck Info: File `MyThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 0856943881040F1A50E62D4711C35D8C;2433.
+(rerunfilecheck)             Checksum: 6EA14A7210434F0F99000D8DC24E2038;2419.
 Package rerunfilecheck Info: File `MyThesis.brf' has not changed.
-(rerunfilecheck)             Checksum: A4F5871DB8B2801FBC3DB0A4AEE410CB;4598.
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: D9223D7B7DBA3027CC0C5385C0ED70B0;7384.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 361.
  ) 
 Here is how much of TeX's memory you used:
- 31695 strings out of 493069
- 596531 string characters out of 6138222
- 1047090 words of memory out of 5000000
- 33896 multiletter control sequences out of 15000+600000
- 188676 words of font info for 380 fonts, out of 8000000 for 9000
+ 32195 strings out of 493069
+ 610767 string characters out of 6138222
+ 1088585 words of memory out of 5000000
+ 34280 multiletter control sequences out of 15000+600000
+ 252477 words of font info for 466 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 73i,12n,79p,8819b,1968s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,12n,89p,8819b,1968s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dis
@@ -3688,10 +4107,10 @@ topia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on MyThesis.pdf (38 pages, 4915006 bytes).
+Output written on MyThesis.pdf (57 pages, 13723920 bytes).
 PDF statistics:
- 788 PDF objects out of 1000 (max. 8388607)
- 705 compressed objects within 8 object streams
- 216 named destinations out of 1000 (max. 500000)
- 67454 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1123 PDF objects out of 1200 (max. 8388607)
+ 973 compressed objects within 10 object streams
+ 277 named destinations out of 1000 (max. 500000)
+ 80873 words of extra memory for PDF output out of 89155 (max. 10000000)
 

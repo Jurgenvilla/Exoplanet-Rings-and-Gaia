@@ -21,18 +21,17 @@
 \BOOKMARK [2][-]{subsection.2.5.1}{2.5.1 Geometry of the Transit}{section.2.5}% 21
 \BOOKMARK [2][-]{subsection.2.5.2}{2.5.2 Rings Lifetime}{section.2.5}% 22
 \BOOKMARK [1][-]{section.2.6}{2.6 Monte-Carlo simulations}{chapter.2}% 23
-\BOOKMARK [1][-]{section.2.7}{2.7 Analytic Form}{chapter.2}% 24
-\BOOKMARK [0][]{chapter.3}{3 }{}% 25
+\BOOKMARK [1][-]{section.2.7}{2.7 Detection Probability: Monte-Carlo vs Analytic Form}{chapter.2}% 24
+\BOOKMARK [0][]{chapter.3}{3 Gaia and SuperWASP sample data}{}% 25
 \BOOKMARK [1][-]{section.3.1}{3.1 Introduction}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.2}{3.2 Gaia Samples}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.3}{3.3 Stellar Evolution Models}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Evolutionary Tracks}{section.3.3}% 29
-\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Isochrones}{section.3.3}% 30
-\BOOKMARK [1][-]{section.3.4}{3.4 Sco-Cen OB Association}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.5}{3.5 Light Curves}{chapter.3}% 32
-\BOOKMARK [0][]{chapter.4}{4 Results and Discussion }{}% 33
-\BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 34
-\BOOKMARK [0][]{chapter.5}{5 \040Summary }{}% 35
-\BOOKMARK [0][]{dummy.4}{Bibliography}{}% 36
-\BOOKMARK [0][]{chapter.6}{6 \040Appendix }{}% 37
-\BOOKMARK [1][-]{section.6.1}{6.1 SQL-queries}{chapter.6}% 38
+\BOOKMARK [1][-]{section.3.2}{3.2 Sco-Cen OB Association}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.3}{3.3 Gaia Samples}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.4}{3.4 Stellar Evolution Models}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.5}{3.5 Light Curves}{chapter.3}% 30
+\BOOKMARK [0][]{chapter.4}{4 Results and Discussion }{}% 31
+\BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 32
+\BOOKMARK [0][]{chapter.5}{5 \040Summary }{}% 33
+\BOOKMARK [0][]{dummy.4}{Bibliography}{}% 34
+\BOOKMARK [0][]{chapter.6}{6 \040Appendix }{}% 35
+\BOOKMARK [1][-]{section.6.1}{6.1 SQL-queries}{chapter.6}% 36
+\BOOKMARK [1][-]{section.6.2}{6.2 Sample selection}{chapter.6}% 37

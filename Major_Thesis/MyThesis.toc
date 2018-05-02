@@ -19,19 +19,18 @@
 \contentsline {subsection}{\numberline {2.5.1}Geometry of the Transit}{10}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Rings Lifetime}{13}{subsection.2.5.2}
 \contentsline {section}{\numberline {2.6}Monte-Carlo simulations}{14}{section.2.6}
-\contentsline {section}{\numberline {2.7}Analytic Form}{14}{section.2.7}
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {\textbf {}}}{21}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{21}{section.3.1}
-\contentsline {section}{\numberline {3.2}Gaia Samples}{21}{section.3.2}
-\contentsline {section}{\numberline {3.3}Stellar Evolution Models}{21}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Evolutionary Tracks}{21}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Isochrones}{21}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Sco-Cen OB Association}{21}{section.3.4}
-\contentsline {section}{\numberline {3.5}Light Curves}{21}{section.3.5}
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {\textbf {Results and Discussion} }}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{23}{section.4.1}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {\textbf { Summary} }}{25}{chapter.5}
+\contentsline {section}{\numberline {2.7}Detection Probability: Monte-Carlo vs Analytic Form}{18}{section.2.7}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {\textbf {Gaia and SuperWASP sample data}}}{29}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{29}{section.3.1}
+\contentsline {section}{\numberline {3.2}Sco-Cen OB Association}{29}{section.3.2}
+\contentsline {section}{\numberline {3.3}Gaia Samples}{29}{section.3.3}
+\contentsline {section}{\numberline {3.4}Stellar Evolution Models}{30}{section.3.4}
+\contentsline {section}{\numberline {3.5}Light Curves}{34}{section.3.5}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {\textbf {Results and Discussion} }}{37}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{37}{section.4.1}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {\textbf { Summary} }}{39}{chapter.5}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{27}{dummy.4}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps { \textbf {Appendix} }}{29}{chapter.6}
-\contentsline {section}{\numberline {6.1}SQL-queries}{29}{section.6.1}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{41}{dummy.4}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps { \textbf {Appendix} }}{45}{chapter.6}
+\contentsline {section}{\numberline {6.1}SQL-queries}{45}{section.6.1}
+\contentsline {section}{\numberline {6.2}Sample selection}{46}{section.6.2}
